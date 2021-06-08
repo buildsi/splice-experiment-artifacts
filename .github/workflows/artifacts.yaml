@@ -1,0 +1,37 @@
+name: "Pull Result Artifacts"
+
+on:
+  pull_request: []
+#  push:
+#    branches: main
+
+jobs:
+  auto-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+          repository: 'buildsi/build-abi-containers'
+
+      - name: Get All Commits In Branch
+        id: merge-commits
+        uses: autamus/merge-commits@main
+
+      - name: Make artifact directory
+        run: mkdir -p ./artifacts
+
+      - name: Pull All Artifacts In Branch Runs
+        uses: autamus/artifact-dl@main
+        with:
+          git_token: ${{ secrets.GITHUB_TOKEN }}
+          input_commits: "${{ steps.merge-commits.outputs.commits }}"
+          # For Docker Container Actions Your Repository is Mounted at '/github/workspace'
+          # So here we'll save our output to the 'artifacts' directory.
+          output_path: '/github/workspace/artifacts'
+          
+      - name: List artifacts
+        run: |
+          tree artifacts
+          cat artifacts/920019619/results-boost.yaml
