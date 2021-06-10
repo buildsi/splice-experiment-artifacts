@@ -1,0 +1,1409 @@
+ELF file '/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/openmpi-3.0.0-uucybrbhkpjiu5p4jupqfupptw3jlqhy/share/openmpi/src/examples/ring_c' is not ABI compatible with '/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/openmpi-1.5-h4ofoizwc2aab2unzywzu5ltshaswska/lib/libmpi.so' due to differences with '/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/openmpi-3.0.0-uucybrbhkpjiu5p4jupqfupptw3jlqhy/lib/libmpi.so' below:
+ELF SONAME changed
+Functions changes summary: 0 Removed, 0 Changed, 0 Added function
+Variables changes summary: 2 Removed, 11 Changed, 0 Added (5 filtered out) variables
+Function symbols changes summary: 0 Removed, 0 Added function symbol not referenced by debug info
+Variable symbols changes summary: 359 Removed, 0 Added (487 filtered out) variable symbols not referenced by debug info
+
+SONAME changed from 'libmpi.so.40' to 'libmpi.so.1'
+
+2 Removed variables:
+
+  [D] 'opal_free_list_item_t* opal_free_list_item_t_type_force_inclusion'    {opal_free_list_item_t_type_force_inclusion}
+  [D] 'opal_free_list_t* opal_free_list_t_type_force_inclusion'    {opal_free_list_t_type_force_inclusion}
+
+11 Changed variables:
+
+  [C] 'char MPIR_dll_name[135]' was changed to 'char MPIR_dll_name[133]' at ompi_debuggers.c:82:1:
+    size of symbol changed from 135 to 133
+    type of variable changed:
+      type name changed from 'char[135]' to 'char[133]'
+      array type size changed from 1080 to 1064
+      array type subrange 1 changed length from 135 to 133
+
+  [C] 'mca_pml_base_recv_request_t* mca_pml_base_recv_request_t_type_force_inclusion' was changed at ompi_debuggers.c:119:1:
+    type of variable changed:
+      in pointed to type 'typedef mca_pml_base_recv_request_t' at pml_base_recvreq.h:39:1:
+        underlying type 'struct mca_pml_base_recv_request_t' at pml_base_recvreq.h:38:1 changed:
+          type size changed from 3840 to 3712 (in bits)
+          2 data member changes:
+            type of 'mca_pml_base_request_t mca_pml_base_recv_request_t::req_base' changed:
+              underlying type 'struct mca_pml_base_request_t' at pml_base_request.h:61:1 changed:
+                type size changed from 3776 to 3648 (in bits)
+                13 data member changes:
+                  type of 'ompi_request_t mca_pml_base_request_t::req_ompi' changed:
+                    underlying type 'struct ompi_request_t' at request.h:104:1 changed:
+                      type size changed from 1216 to 1088 (in bits)
+                      1 data member deletion:
+                        'void* ompi_request_t::req_complete_cb_data', at offset 1088 (in bits) at request.h:115:1
+                      10 data member changes:
+                        type of 'opal_free_list_item_t ompi_request_t::super' changed:
+                          typedef name changed from opal_free_list_item_t to ompi_free_list_item_t at ompi_free_list.h:67:1
+                          underlying type 'struct opal_free_list_item_t' at opal_free_list.h:100:1 changed:
+                            type name changed from 'opal_free_list_item_t' to 'ompi_free_list_item_t'
+                            type size hasn't changed
+                            2 data member changes (1 filtered):
+                              type of 'opal_list_item_t opal_free_list_item_t::super' changed:
+                                underlying type 'struct opal_list_item_t' at opal_list.h:102:1 changed:
+                                  type size hasn't changed
+                                  2 data member changes:
+                                    type of 'volatile opal_list_item_t* volatile opal_list_item_t::opal_list_next' changed:
+                                      entity changed from 'volatile opal_list_item_t* volatile' to 'volatile opal_list_item_t*'
+                                      type size hasn't changed
+                                    type of 'volatile opal_list_item_t* volatile opal_list_item_t::opal_list_prev' changed:
+                                      entity changed from 'volatile opal_list_item_t* volatile' to 'volatile opal_list_item_t*'
+                                      type size hasn't changed
+                              and name of 'opal_free_list_item_t::super' changed to 'ompi_free_list_item_t::super' at ompi_free_list.h:63:1
+                              type of 'mca_rcache_base_registration_t* opal_free_list_item_t::registration' changed:
+                                in pointed to type 'struct mca_rcache_base_registration_t':
+                                  type name changed from 'mca_rcache_base_registration_t' to 'mca_mpool_base_registration_t'
+                                  type size hasn't changed
+                              and name of 'opal_free_list_item_t::registration' changed to 'ompi_free_list_item_t::registration' at ompi_free_list.h:64:1
+                        type of 'ompi_request_type_t ompi_request_t::req_type' changed:
+                          underlying type 'enum __anonymous_enum__' at request_dbg.h:22:1 changed:
+                            type size hasn't changed
+                            2 enumerator deletions:
+                              '__anonymous_enum__::OMPI_REQUEST_COLL' value '4'
+                              '__anonymous_enum__::OMPI_REQUEST_COMM' value '7'
+                            3 enumerator changes:
+                              '__anonymous_enum__::OMPI_REQUEST_NULL' from value '5' to '4' at request_dbg.h:22:1
+                              '__anonymous_enum__::OMPI_REQUEST_NOOP' from value '6' to '5' at request_dbg.h:22:1
+                              '__anonymous_enum__::OMPI_REQUEST_MAX' from value '8' to '6' at request_dbg.h:22:1
+                        type of 'volatile void* ompi_request_t::req_complete' changed:
+                          entity changed from 'volatile void*' to 'volatile bool'
+                          type size changed from 64 to 8 (in bits)
+                        'volatile ompi_request_state_t ompi_request_t::req_state' offset changed from 768 to 736 (in bits) (by -32 bits)
+                        'bool ompi_request_t::req_persistent' offset changed from 800 to 768 (in bits) (by -32 bits)
+                        'int ompi_request_t::req_f_to_c_index' offset changed from 832 to 800 (in bits) (by -32 bits)
+                        type of 'ompi_request_free_fn_t ompi_request_t::req_free' changed:
+                          underlying type 'int (ompi_request_t**)*' changed:
+                            in pointed to type 'function type int (ompi_request_t**)':
+                              parameter 1 of type 'ompi_request_t**' has sub-type changes:
+                                in pointed to type 'ompi_request_t*':
+                                  pointed to type 'struct ompi_request_t' changed, as being reported
+                        and offset changed from 896 to 832 (in bits) (by -64 bits)
+                        type of 'ompi_request_cancel_fn_t ompi_request_t::req_cancel' changed:
+                          underlying type 'int (ompi_request_t*, int)*' changed:
+                            in pointed to type 'function type int (ompi_request_t*, int)':
+                              parameter 1 of type 'ompi_request_t*' has sub-type changes:
+                                pointed to type 'struct ompi_request_t' changed, as being reported
+                        and offset changed from 960 to 896 (in bits) (by -64 bits)
+                        type of 'ompi_request_complete_fn_t ompi_request_t::req_complete_cb' changed:
+                          underlying type 'int (ompi_request_t*)*' changed:
+                            in pointed to type 'function type int (ompi_request_t*)':
+                              parameter 1 of type 'ompi_request_t*' has sub-type changes:
+                                pointed to type 'struct ompi_request_t' changed, as being reported
+                        and offset changed from 1024 to 960 (in bits) (by -64 bits)
+                        type of 'ompi_mpi_object_t ompi_request_t::req_mpi_object' changed:
+                          underlying type 'union ompi_mpi_object_t' at request.h:95:1 changed:
+                            type size hasn't changed
+                            3 data member changes:
+                              type of 'ompi_communicator_t* ompi_mpi_object_t::comm' changed:
+                                in pointed to type 'struct ompi_communicator_t' at communicator.h:103:1:
+                                  type size changed from 2112 to 4288 (in bits)
+                                  3 data member insertions:
+                                    'mca_base_component_t* ompi_communicator_t::c_topo_component', at offset 1664 (in bits) at communicator.h:132:1
+                                    'mca_topo_base_comm_1_0_0_t* ompi_communicator_t::c_topo_comm', at offset 1792 (in bits) at communicator.h:137:1
+                                    'mca_topo_base_module_comm_t* ompi_communicator_t::c_topo_module', at offset 1856 (in bits) at communicator.h:140:1
+                                  11 data member changes:
+                                    type of 'ompi_group_t* ompi_communicator_t::c_local_group' changed:
+                                      in pointed to type 'struct ompi_group_t' at group.h:78:1:
+                                        type size hasn't changed
+                                        2 data member changes:
+                                          type of 'ompi_proc_t** ompi_group_t::grp_proc_pointers' changed:
+                                            in pointed to type 'ompi_proc_t*':
+                                              in pointed to type 'struct ompi_proc_t' at proc.h:54:1:
+                                                type size changed from 768 to 704 (in bits)
+                                                5 data member insertions:
+                                                  'orte_process_name_t ompi_proc_t::proc_name', at offset 320 (in bits) at proc.h:58:1
+                                                  'mca_pml_endpoint_t* ompi_proc_t::proc_pml', at offset 384 (in bits) at proc.h:60:1
+                                                  'mca_bml_base_endpoint_t* ompi_proc_t::proc_bml', at offset 448 (in bits) at proc.h:62:1
+                                                  'uint32_t ompi_proc_t::proc_arch', at offset 512 (in bits) at proc.h:64:1
+                                                  'uint8_t ompi_proc_t::proc_flags', at offset 544 (in bits) at proc.h:66:1
+                                                3 data member changes:
+                                                  type of 'void* ompi_proc_t::proc_endpoints[1]' changed:
+                                                    entity changed from 'void*[1]' to 'opal_convertor_t*'
+                                                  and name of 'ompi_proc_t::proc_endpoints' changed to 'ompi_proc_t::proc_convertor' at proc.h:68:1
+                                                  type of 'char ompi_proc_t::padding[16]' changed:
+                                                    entity changed from 'char[16]' to 'char*'
+                                                    type size changed from 128 to 64 (in bits)
+                                                  and name of 'ompi_proc_t::padding' changed to 'ompi_proc_t::proc_hostname' at proc.h:72:1
+                                                  type of 'opal_proc_t ompi_proc_t::super' changed:
+                                                    typedef name changed from opal_proc_t to opal_list_item_t at opal_list.h:118:1
+                                                    underlying type 'struct opal_proc_t' at proc.h:84:1 changed:
+                                                      type name changed from 'opal_proc_t' to 'opal_list_item_t'
+                                                      type size changed from 576 to 320 (in bits)
+                                                      5 data member deletions:
+                                                        'opal_process_name_t opal_proc_t::proc_name', at offset 320 (in bits) at proc.h:88:1
+                                                        'uint32_t opal_proc_t::proc_arch', at offset 384 (in bits) at proc.h:90:1
+                                                        'opal_hwloc_locality_t opal_proc_t::proc_flags', at offset 416 (in bits) at proc.h:92:1
+                                                        'opal_convertor_t* opal_proc_t::proc_convertor', at offset 448 (in bits) at proc.h:94:1
+                                                        'char* opal_proc_t::proc_hostname', at offset 512 (in bits) at proc.h:97:1
+                                                      3 data member insertions:
+                                                        'volatile opal_list_item_t* opal_list_item_t::opal_list_next', at offset 128 (in bits) at opal_list.h:102:1
+                                                        'volatile opal_list_item_t* opal_list_item_t::opal_list_prev', at offset 192 (in bits) at opal_list.h:104:1
+                                                        'int32_t opal_list_item_t::item_free', at offset 256 (in bits) at opal_list.h:106:1
+                                                      1 data member change:
+                                                        type of 'opal_list_item_t opal_proc_t::super' changed:
+                                                          typedef name changed from opal_list_item_t to opal_object_t at opal_object.h:138:1
+                                                          underlying type 'struct opal_list_item_t' at opal_list.h:102:1 changed:
+                                                            type name changed from 'opal_list_item_t' to 'opal_object_t'
+                                                            type size changed from 320 to 128 (in bits)
+                                                            3 data member deletions:
+                                                              'volatile opal_list_item_t* volatile opal_list_item_t::opal_list_next', at offset 128 (in bits) at opal_list.h:106:1
+                                                              'volatile opal_list_item_t* volatile opal_list_item_t::opal_list_prev', at offset 192 (in bits) at opal_list.h:108:1
+                                                              'int32_t opal_list_item_t::item_free', at offset 256 (in bits) at opal_list.h:110:1
+                                                            1 data member insertion:
+                                                              'volatile int32_t opal_object_t::obj_reference_count', at offset 64 (in bits) at opal_object.h:189:1
+                                                            1 data member change:
+                                                              type of 'opal_object_t opal_list_item_t::super' changed:
+                                                                entity changed from 'typedef opal_object_t' to 'opal_class_t*'
+                                                                type size changed from 128 to 64 (in bits)
+                                                              and name of 'opal_list_item_t::super' changed to 'opal_object_t::obj_class' at opal_object.h:188:1
+                                                        and name of 'opal_proc_t::super' changed to 'opal_list_item_t::super' at opal_list.h:100:1
+                                          type of 'ompi_group_t* ompi_group_t::grp_parent_group_ptr' changed:
+                                            pointed to type 'struct ompi_group_t' changed, as being reported
+                                    type of 'ompi_group_t* ompi_communicator_t::c_remote_group' changed:
+                                      pointed to type 'struct ompi_group_t' changed at group.h:83:1, as reported earlier
+                                    type of 'ompi_communicator_t* ompi_communicator_t::c_local_comm' changed:
+                                      pointed to type 'struct ompi_communicator_t' changed, as being reported
+                                    type of 'opal_hash_table_t* ompi_communicator_t::c_keyhash' changed:
+                                      in pointed to type 'struct opal_hash_table_t' at opal_hash_table.h:42:1:
+                                        type size changed from 576 to 896 (in bits)
+                                        7 data member deletions:
+                                          'size_t opal_hash_table_t::ht_capacity', at offset 192 (in bits) at opal_hash_table.h:52:1
+                                          'size_t opal_hash_table_t::ht_growth_trigger', at offset 320 (in bits) at opal_hash_table.h:54:1
+                                          'int opal_hash_table_t::ht_density_numer', at offset 384 (in bits) at opal_hash_table.h:55:1
+                                          'int opal_hash_table_t::ht_density_denom', at offset 416 (in bits) at opal_hash_table.h:55:1
+                                          'int opal_hash_table_t::ht_growth_numer', at offset 448 (in bits) at opal_hash_table.h:56:1
+                                          'int opal_hash_table_t::ht_growth_denom', at offset 480 (in bits) at opal_hash_table.h:56:1
+                                          'const opal_hash_type_methods_t* opal_hash_table_t::ht_type_methods', at offset 512 (in bits) at opal_hash_table.h:57:1
+                                        3 data member insertions:
+                                          'opal_list_t opal_hash_table_t::ht_nodes', at offset 128 (in bits) at opal_hash_table.h:45:1
+                                          'size_t opal_hash_table_t::ht_table_size', at offset 704 (in bits) at opal_hash_table.h:47:1
+                                          'size_t opal_hash_table_t::ht_mask', at offset 832 (in bits) at opal_hash_table.h:49:1
+                                        2 data member changes:
+                                          type of 'opal_hash_element_t* opal_hash_table_t::ht_table' changed:
+                                            in pointed to type 'struct opal_hash_element_t' at opal_list.h:159:1:
+                                              entity changed from 'struct opal_hash_element_t' to compatible type 'typedef opal_list_t' at opal_list.h:159:1
+                                                type name changed from 'opal_hash_element_t' to 'opal_list_t'
+                                                type size changed from 0 to 512 (in bits)
+                                                3 data member insertions:
+                                                  'opal_object_t opal_list_t::super', at offset 0 (in bits) at opal_list.h:149:1
+                                                  'opal_list_item_t opal_list_t::opal_list_sentinel', at offset 128 (in bits) at opal_list.h:151:1
+                                                  'volatile size_t opal_list_t::opal_list_length', at offset 448 (in bits) at opal_list.h:153:1
+                                          and offset changed from 128 to 640 (in bits) (by +512 bits)
+                                          'size_t opal_hash_table_t::ht_size' offset changed from 256 to 768 (in bits) (by +512 bits)
+                                    type of 'mca_topo_base_module_t* ompi_communicator_t::c_topo' changed:
+                                      in pointed to type 'struct mca_topo_base_module_t':
+                                        entity changed from 'struct mca_topo_base_module_t' to 'const mca_topo_base_module_1_0_0_t'
+                                        type size changed from 832 to 1024 (in bits)
+                                    and offset changed from 1664 to 1728 (in bits) (by +64 bits)
+                                    'int ompi_communicator_t::c_f_to_c_index' offset changed from 1728 to 1920 (in bits) (by +192 bits)
+                                    type of 'ompi_peruse_handle_t** ompi_communicator_t::c_peruse_handles' changed:
+                                      in pointed to type 'ompi_peruse_handle_t*':
+                                        in pointed to type 'struct ompi_peruse_handle_t' at peruse-internal.h:30:1:
+                                          type size hasn't changed
+                                          4 data member changes (1 filtered):
+                                            type of 'opal_list_item_t ompi_peruse_handle_t::super' changed, as reported earlier
+                                            type of 'ompi_communicator_t* ompi_peruse_handle_t::comm' changed:
+                                              pointed to type 'struct ompi_communicator_t' changed, as being reported
+                                            type of 'ompi_file_t* ompi_peruse_handle_t::file' changed:
+                                              in pointed to type 'struct ompi_file_t' at file.h:42:1:
+                                                type size changed from 7104 to 6144 (in bits)
+                                                1 data member deletion:
+                                                  'opal_mutex_t ompi_file_t::f_mutex', at offset 576 (in bits) at file.h:84:1
+                                                6 data member changes:
+                                                  type of 'ompi_communicator_t* ompi_file_t::f_comm' changed:
+                                                    pointed to type 'struct ompi_communicator_t' changed, as being reported
+                                                  type of 'ompi_info_t* ompi_file_t::f_info' changed:
+                                                    in pointed to type 'struct ompi_info_t' at info.h:38:1:
+                                                      type size hasn't changed
+                                                      1 data member change:
+                                                        type of 'opal_list_t ompi_info_t::super' changed:
+                                                          underlying type 'struct opal_list_t' at opal_list.h:151:1 changed:
+                                                            type size hasn't changed
+                                                            1 data member change:
+                                                              type of 'opal_list_item_t opal_list_t::opal_list_sentinel' changed, as reported earlier
+                                                  type of 'ompi_errhandler_t* ompi_file_t::error_handler' changed:
+                                                    in pointed to type 'typedef ompi_errhandler_t' at errhandler.h:128:1:
+                                                      underlying type 'struct ompi_errhandler_t' at errhandler.h:104:1 changed:
+                                                        type size hasn't changed
+                                                        4 data member changes:
+                                                          type of 'MPI_Comm_errhandler_function* ompi_errhandler_t::eh_comm_fn' changed:
+                                                            in pointed to type 'typedef MPI_Comm_errhandler_function' at mpi.h:352:1:
+                                                              underlying type 'function type void (MPI_Comm*, int*, variadic parameter type)' changed:
+                                                                parameter 1 of type 'MPI_Comm*' has sub-type changes:
+                                                                  in pointed to type 'typedef MPI_Comm' at mpi.h:307:1:
+                                                                    underlying type 'ompi_communicator_t*' changed:
+                                                                      pointed to type 'struct ompi_communicator_t' changed, as being reported
+                                                          type of 'ompi_file_errhandler_fn* ompi_errhandler_t::eh_file_fn' changed:
+                                                            in pointed to type 'typedef ompi_file_errhandler_fn' at mpi.h:361:1:
+                                                              underlying type 'function type void (MPI_File*, int*, variadic parameter type)' changed:
+                                                                parameter 1 of type 'MPI_File*' has sub-type changes:
+                                                                  in pointed to type 'typedef MPI_File' at mpi.h:311:1:
+                                                                    underlying type 'ompi_file_t*' changed:
+                                                                      pointed to type 'struct ompi_file_t' changed, as being reported
+                                                          type of 'MPI_Win_errhandler_function* ompi_errhandler_t::eh_win_fn' changed:
+                                                            in pointed to type 'typedef MPI_Win_errhandler_function' at mpi.h:369:1:
+                                                              underlying type 'function type void (MPI_Win*, int*, variadic parameter type)' changed:
+                                                                parameter 1 of type 'MPI_Win*' has sub-type changes:
+                                                                  in pointed to type 'typedef MPI_Win' at mpi.h:318:1:
+                                                                    underlying type 'ompi_win_t*' changed:
+                                                                      in pointed to type 'struct ompi_win_t' at win.h:53:1:
+                                                                        type size changed from 1664 to 1792 (in bits)
+                                                                        2 data member deletions:
+                                                                          'uint16_t ompi_win_t::w_flavor', at offset 1232 (in bits) at win.h:89:1
+                                                                          'ompi_win_accumulate_ops_t ompi_win_t::w_acc_ops', at offset 1248 (in bits) at win.h:92:1
+                                                                        3 data member insertions:
+                                                                          'int ompi_win_t::w_disp_unit', at offset 1504 (in bits) at win.h:79:1
+                                                                          'void* ompi_win_t::w_baseptr', at offset 1536 (in bits) at win.h:81:1
+                                                                          'volatile uint16_t ompi_win_t::w_mode', at offset 1664 (in bits) at win.h:87:1
+                                                                        5 data member changes:
+                                                                          type of 'int32_t ompi_win_t::w_acc_order' changed:
+                                                                            typedef name changed from int32_t to size_t at stddef.h:216:1
+                                                                            underlying type 'typedef __int32_t' at types.h:40:1 changed:
+                                                                              entity changed from 'typedef __int32_t' to compatible type 'unsigned long int'
+                                                                                type name changed from 'int' to 'unsigned long int'
+                                                                                type size changed from 32 to 64 (in bits)
+                                                                          and name of 'ompi_win_t::w_acc_order' changed to 'ompi_win_t::w_size' at win.h:82:1
+                                                                          type of 'ompi_group_t* ompi_win_t::w_group' changed:
+                                                                            pointed to type 'struct ompi_group_t' changed at group.h:83:1, as reported earlier
+                                                                          type of 'opal_hash_table_t* ompi_win_t::w_keyhash' changed:
+                                                                            pointed to type 'struct opal_hash_table_t' changed at opal_hash_table.h:48:1, as reported earlier
+                                                                          type of 'ompi_errhandler_t* ompi_win_t::error_handler' changed:
+                                                                            in pointed to type 'typedef ompi_errhandler_t' at errhandler.h:128:1:
+                                                                              underlying type 'struct ompi_errhandler_t' changed, as being reported
+                                                                          type of 'ompi_osc_base_module_t* ompi_win_t::w_osc_module' changed:
+                                                                            in pointed to type 'typedef ompi_osc_base_module_t' at osc.h:300:1:
+                                                                              underlying type 'typedef ompi_osc_base_module_3_0_0_t' at osc.h:413:1 changed:
+                                                                                typedef name changed from ompi_osc_base_module_3_0_0_t to ompi_osc_base_module_1_0_0_t at osc.h:299:1
+                                                                                underlying type 'struct ompi_osc_base_module_3_0_0_t' at osc.h:372:1 changed:
+                                                                                  type name changed from 'ompi_osc_base_module_3_0_0_t' to 'ompi_osc_base_module_1_0_0_t'
+                                                                                  type size changed from 1984 to 768 (in bits)
+                                                                                  19 data member deletions:
+                                                                                    'ompi_osc_base_module_win_shared_query_fn_t ompi_osc_base_module_3_0_0_t::osc_win_shared_query', at offset 0 (in bits) at osc.h:373:1
+                                                                                    'ompi_osc_base_module_win_attach_fn_t ompi_osc_base_module_3_0_0_t::osc_win_attach', at offset 64 (in bits) at osc.h:375:1
+                                                                                    'ompi_osc_base_module_win_detach_fn_t ompi_osc_base_module_3_0_0_t::osc_win_detach', at offset 128 (in bits) at osc.h:376:1
+                                                                                    'ompi_osc_base_module_compare_and_swap_fn_t ompi_osc_base_module_3_0_0_t::osc_compare_and_swap', at offset 448 (in bits) at osc.h:382:1
+                                                                                    'ompi_osc_base_module_fetch_and_op_fn_t ompi_osc_base_module_3_0_0_t::osc_fetch_and_op', at offset 512 (in bits) at osc.h:383:1
+                                                                                    'ompi_osc_base_module_get_accumulate_fn_t ompi_osc_base_module_3_0_0_t::osc_get_accumulate', at offset 576 (in bits) at osc.h:384:1
+                                                                                    'ompi_osc_base_module_rput_fn_t ompi_osc_base_module_3_0_0_t::osc_rput', at offset 640 (in bits) at osc.h:386:1
+                                                                                    'ompi_osc_base_module_rget_fn_t ompi_osc_base_module_3_0_0_t::osc_rget', at offset 704 (in bits) at osc.h:387:1
+                                                                                    'ompi_osc_base_module_raccumulate_fn_t ompi_osc_base_module_3_0_0_t::osc_raccumulate', at offset 768 (in bits) at osc.h:388:1
+                                                                                    'ompi_osc_base_module_rget_accumulate_fn_t ompi_osc_base_module_3_0_0_t::osc_rget_accumulate', at offset 832 (in bits) at osc.h:389:1
+                                                                                    'ompi_osc_base_module_lock_all_fn_t ompi_osc_base_module_3_0_0_t::osc_lock_all', at offset 1408 (in bits) at osc.h:401:1
+                                                                                    'ompi_osc_base_module_unlock_all_fn_t ompi_osc_base_module_3_0_0_t::osc_unlock_all', at offset 1472 (in bits) at osc.h:402:1
+                                                                                    'ompi_osc_base_module_sync_fn_t ompi_osc_base_module_3_0_0_t::osc_sync', at offset 1536 (in bits) at osc.h:404:1
+                                                                                    'ompi_osc_base_module_flush_fn_t ompi_osc_base_module_3_0_0_t::osc_flush', at offset 1600 (in bits) at osc.h:405:1
+                                                                                    'ompi_osc_base_module_flush_all_fn_t ompi_osc_base_module_3_0_0_t::osc_flush_all', at offset 1664 (in bits) at osc.h:406:1
+                                                                                    'ompi_osc_base_module_flush_local_fn_t ompi_osc_base_module_3_0_0_t::osc_flush_local', at offset 1728 (in bits) at osc.h:407:1
+                                                                                    'ompi_osc_base_module_flush_local_all_fn_t ompi_osc_base_module_3_0_0_t::osc_flush_local_all', at offset 1792 (in bits) at osc.h:408:1
+                                                                                    'ompi_osc_base_module_set_info_fn_t ompi_osc_base_module_3_0_0_t::osc_set_info', at offset 1856 (in bits) at osc.h:410:1
+                                                                                    'ompi_osc_base_module_get_info_fn_t ompi_osc_base_module_3_0_0_t::osc_get_info', at offset 1920 (in bits) at osc.h:411:1
+                                                                                  12 data member changes:
+                                                                                    type of 'ompi_osc_base_module_free_fn_t ompi_osc_base_module_3_0_0_t::osc_free' changed:
+                                                                                      underlying type 'int (ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (ompi_win_t*)':
+                                                                                          parameter 1 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_free' changed to 'ompi_osc_base_module_1_0_0_t::osc_free' at osc.h:271:1, offset changed from 192 to 0 (in bits) (by -192 bits)
+                                                                                    type of 'ompi_osc_base_module_put_fn_t ompi_osc_base_module_3_0_0_t::osc_put' changed:
+                                                                                      underlying type 'int (void*, int, ompi_datatype_t*, int, typedef ptrdiff_t, int, ompi_datatype_t*, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (void*, int, ompi_datatype_t*, int, typedef ptrdiff_t, int, ompi_datatype_t*, ompi_win_t*)':
+                                                                                          parameter 3 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                            in pointed to type 'struct ompi_datatype_t' at ompi_datatype.h:68:1:
+                                                                                              type size changed from 2304 to 3584 (in bits)
+                                                                                              1 data member deletion:
+                                                                                                'uint64_t ompi_datatype_t::pml_data', at offset 1728 (in bits) at ompi_datatype.h:77:1
+                                                                                              7 data member changes:
+                                                                                                type of 'opal_datatype_t ompi_datatype_t::super' changed:
+                                                                                                  underlying type 'struct opal_datatype_t' at opal_datatype.h:105:1 changed:
+                                                                                                    type size changed from 1472 to 2816 (in bits)
+                                                                                                    2 data member deletions:
+                                                                                                      'uint32_t opal_datatype_t::loops', at offset 608 (in bits) at opal_datatype.h:119:1
+                                                                                                      'size_t* opal_datatype_t::ptypes', at offset 1408 (in bits) at opal_datatype.h:128:1
+                                                                                                    1 data member insertion:
+                                                                                                      'uint32_t opal_datatype_t::btypes[46]', at offset 1344 (in bits) at opal_datatype.h:125:1
+                                                                                                    5 data member changes:
+                                                                                                      type of 'size_t opal_datatype_t::nbElems' changed:
+                                                                                                        typedef name changed from size_t to uint32_t at stdint-uintn.h:26:1
+                                                                                                        underlying type 'unsigned long int' changed:
+                                                                                                          entity changed from 'unsigned long int' to compatible type 'typedef __uint32_t' at types.h:41:1
+                                                                                                            type name changed from 'unsigned long int' to 'unsigned int'
+                                                                                                            type size changed from 64 to 32 (in bits)
+                                                                                                      and offset changed from 512 to 544 (in bits) (by +32 bits)
+                                                                                                      'uint32_t opal_datatype_t::align' offset changed from 576 to 512 (in bits) (by -64 bits)
+                                                                                                      'char opal_datatype_t::name[64]' offset changed from 640 to 576 (in bits) (by -64 bits)
+                                                                                                      'dt_type_desc_t opal_datatype_t::desc' offset changed from 1152 to 1088 (in bits) (by -64 bits)
+                                                                                                      'dt_type_desc_t opal_datatype_t::opt_desc' offset changed from 1280 to 1216 (in bits) (by -64 bits)
+                                                                                                'int32_t ompi_datatype_t::id' offset changed from 1472 to 2816 (in bits) (by +1344 bits)
+                                                                                                'int32_t ompi_datatype_t::d_f_to_c_index' offset changed from 1504 to 2848 (in bits) (by +1344 bits)
+                                                                                                type of 'opal_hash_table_t* ompi_datatype_t::d_keyhash' changed:
+                                                                                                  pointed to type 'struct opal_hash_table_t' changed at opal_hash_table.h:48:1, as reported earlier
+                                                                                                and offset changed from 1536 to 2880 (in bits) (by +1344 bits)
+                                                                                                'void* ompi_datatype_t::args' offset changed from 1600 to 2944 (in bits) (by +1344 bits)
+                                                                                                'void* ompi_datatype_t::packed_description' offset changed from 1664 to 3008 (in bits) (by +1344 bits)
+                                                                                                'char ompi_datatype_t::name[64]' offset changed from 1792 to 3072 (in bits) (by +1280 bits)
+                                                                                          parameter 7 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                          parameter 8 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_put' changed to 'ompi_osc_base_module_1_0_0_t::osc_put' at osc.h:274:1, offset changed from 256 to 64 (in bits) (by -192 bits)
+                                                                                    type of 'ompi_osc_base_module_get_fn_t ompi_osc_base_module_3_0_0_t::osc_get' changed:
+                                                                                      underlying type 'int (void*, int, ompi_datatype_t*, int, typedef ptrdiff_t, int, ompi_datatype_t*, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (void*, int, ompi_datatype_t*, int, typedef ptrdiff_t, int, ompi_datatype_t*, ompi_win_t*)':
+                                                                                          parameter 3 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                          parameter 7 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                          parameter 8 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_get' changed to 'ompi_osc_base_module_1_0_0_t::osc_get' at osc.h:276:1, offset changed from 320 to 128 (in bits) (by -192 bits)
+                                                                                    type of 'ompi_osc_base_module_accumulate_fn_t ompi_osc_base_module_3_0_0_t::osc_accumulate' changed:
+                                                                                      underlying type 'int (void*, int, ompi_datatype_t*, int, typedef ptrdiff_t, int, ompi_datatype_t*, ompi_op_t*, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (void*, int, ompi_datatype_t*, int, typedef ptrdiff_t, int, ompi_datatype_t*, ompi_op_t*, ompi_win_t*)':
+                                                                                          parameter 3 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                          parameter 7 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                          parameter 9 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_accumulate' changed to 'ompi_osc_base_module_1_0_0_t::osc_accumulate' at osc.h:278:1, offset changed from 384 to 192 (in bits) (by -192 bits)
+                                                                                    type of 'ompi_osc_base_module_fence_fn_t ompi_osc_base_module_3_0_0_t::osc_fence' changed:
+                                                                                      underlying type 'int (int, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (int, ompi_win_t*)':
+                                                                                          parameter 2 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_fence' changed to 'ompi_osc_base_module_1_0_0_t::osc_fence' at osc.h:281:1, offset changed from 896 to 256 (in bits) (by -640 bits)
+                                                                                    type of 'ompi_osc_base_module_start_fn_t ompi_osc_base_module_3_0_0_t::osc_start' changed:
+                                                                                      underlying type 'int (ompi_group_t*, int, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (ompi_group_t*, int, ompi_win_t*)':
+                                                                                          parameter 1 of type 'ompi_group_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_group_t' changed at group.h:83:1, as reported earlier
+                                                                                          parameter 3 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_start' changed to 'ompi_osc_base_module_1_0_0_t::osc_start' at osc.h:284:1, offset changed from 960 to 320 (in bits) (by -640 bits)
+                                                                                    type of 'ompi_osc_base_module_complete_fn_t ompi_osc_base_module_3_0_0_t::osc_complete' changed:
+                                                                                      underlying type 'int (ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (ompi_win_t*)':
+                                                                                          parameter 1 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_complete' changed to 'ompi_osc_base_module_1_0_0_t::osc_complete' at osc.h:286:1, offset changed from 1024 to 384 (in bits) (by -640 bits)
+                                                                                    type of 'ompi_osc_base_module_post_fn_t ompi_osc_base_module_3_0_0_t::osc_post' changed:
+                                                                                      underlying type 'int (ompi_group_t*, int, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (ompi_group_t*, int, ompi_win_t*)':
+                                                                                          parameter 1 of type 'ompi_group_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_group_t' changed at group.h:83:1, as reported earlier
+                                                                                          parameter 3 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_post' changed to 'ompi_osc_base_module_1_0_0_t::osc_post' at osc.h:288:1, offset changed from 1088 to 448 (in bits) (by -640 bits)
+                                                                                    type of 'ompi_osc_base_module_wait_fn_t ompi_osc_base_module_3_0_0_t::osc_wait' changed:
+                                                                                      underlying type 'int (ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (ompi_win_t*)':
+                                                                                          parameter 1 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_wait' changed to 'ompi_osc_base_module_1_0_0_t::osc_wait' at osc.h:290:1, offset changed from 1152 to 512 (in bits) (by -640 bits)
+                                                                                    type of 'ompi_osc_base_module_test_fn_t ompi_osc_base_module_3_0_0_t::osc_test' changed:
+                                                                                      underlying type 'int (ompi_win_t*, int*)*' changed:
+                                                                                        in pointed to type 'function type int (ompi_win_t*, int*)':
+                                                                                          parameter 1 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_test' changed to 'ompi_osc_base_module_1_0_0_t::osc_test' at osc.h:292:1, offset changed from 1216 to 576 (in bits) (by -640 bits)
+                                                                                    type of 'ompi_osc_base_module_lock_fn_t ompi_osc_base_module_3_0_0_t::osc_lock' changed:
+                                                                                      underlying type 'int (int, int, int, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (int, int, int, ompi_win_t*)':
+                                                                                          parameter 4 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_lock' changed to 'ompi_osc_base_module_1_0_0_t::osc_lock' at osc.h:295:1, offset changed from 1280 to 640 (in bits) (by -640 bits)
+                                                                                    type of 'ompi_osc_base_module_unlock_fn_t ompi_osc_base_module_3_0_0_t::osc_unlock' changed:
+                                                                                      underlying type 'int (int, ompi_win_t*)*' changed:
+                                                                                        in pointed to type 'function type int (int, ompi_win_t*)':
+                                                                                          parameter 2 of type 'ompi_win_t*' has sub-type changes:
+                                                                                            pointed to type 'struct ompi_win_t' changed, as being reported
+                                                                                    and name of 'ompi_osc_base_module_3_0_0_t::osc_unlock' changed to 'ompi_osc_base_module_1_0_0_t::osc_unlock' at osc.h:297:1, offset changed from 1344 to 704 (in bits) (by -640 bits)
+                                                                          and offset changed from 1536 to 1728 (in bits) (by +192 bits)
+                                                          type of 'ompi_errhandler_cxx_dispatch_fn_t* ompi_errhandler_t::eh_cxx_dispatch_fn' changed:
+                                                            in pointed to type 'typedef ompi_errhandler_cxx_dispatch_fn_t' at errhandler.h:90:1:
+                                                              underlying type 'function type void (void*, int*, const char*, ompi_errhandler_generic_handler_fn_t*)' changed:
+                                                                parameter 1 of type 'void*' changed:
+                                                                  in pointed to type 'void' at errhandler.h:128:1:
+                                                                    entity changed from 'void' to 'typedef ompi_errhandler_t' at errhandler.h:128:1
+                                                                    type size changed from 0 to 1088 (in bits)
+                                                                parameter 2 of type 'int*' changed:
+                                                                  in pointed to type 'int':
+                                                                    type name changed from 'int' to 'void'
+                                                                    type size changed from 32 to 0 (in bits)
+                                                                parameter 3 of type 'const char*' changed:
+                                                                  in pointed to type 'const char':
+                                                                    entity changed from 'const char' to 'int'
+                                                                    type size changed from 8 to 32 (in bits)
+                                                                parameter 4 of type 'ompi_errhandler_generic_handler_fn_t*' changed:
+                                                                  in pointed to type 'typedef ompi_errhandler_generic_handler_fn_t':
+                                                                    entity changed from 'typedef ompi_errhandler_generic_handler_fn_t' to 'const char'
+                                                                    type size changed from 64 to 8 (in bits)
+                                                  type of 'mca_io_base_components_t ompi_file_t::f_io_selected_component' changed:
+                                                    underlying type 'union mca_io_base_components_t' at io.h:131:1 changed:
+                                                      type size changed from 2560 to 2368 (in bits)
+                                                      1 data member change:
+                                                        type of 'mca_io_base_component_2_0_0_t mca_io_base_components_t::v2_0_0' changed:
+                                                          underlying type 'struct mca_io_base_component_2_0_0_t' at io.h:111:1 changed:
+                                                            type size changed from 2560 to 2368 (in bits)
+                                                            9 data member changes:
+                                                              type of 'mca_base_component_t mca_io_base_component_2_0_0_t::io_version' changed:
+                                                                underlying type 'struct mca_base_component_2_1_0_t' at mca.h:281:1 changed:
+                                                                  type name changed from 'mca_base_component_2_1_0_t' to 'mca_base_component_2_0_0_t'
+                                                                  type size changed from 1792 to 1600 (in bits)
+                                                                  5 data member deletions:
+                                                                    'char mca_base_component_2_1_0_t::mca_project_name[16]', at offset 96 (in bits) at mca.h:290:1
+                                                                    'int mca_base_component_2_1_0_t::mca_project_major_version', at offset 224 (in bits) at mca.h:292:1
+                                                                    'int mca_base_component_2_1_0_t::mca_project_minor_version', at offset 256 (in bits) at mca.h:295:1
+                                                                    'int mca_base_component_2_1_0_t::mca_project_release_version', at offset 288 (in bits) at mca.h:298:1
+                                                                    'int32_t mca_base_component_2_1_0_t::mca_component_flags', at offset 1536 (in bits) at mca.h:332:1
+                                                                  13 data member changes (3 filtered):
+                                                                    'char mca_base_component_2_1_0_t::mca_type_name[32]' offset changed from 320 to 96 (in bits) (by -224 bits)
+                                                                    'int mca_base_component_2_1_0_t::mca_type_major_version' offset changed from 576 to 352 (in bits) (by -224 bits)
+                                                                    'int mca_base_component_2_1_0_t::mca_type_minor_version' offset changed from 608 to 384 (in bits) (by -224 bits)
+                                                                    'int mca_base_component_2_1_0_t::mca_type_release_version' offset changed from 640 to 416 (in bits) (by -224 bits)
+                                                                    'char mca_base_component_2_1_0_t::mca_component_name[64]' offset changed from 672 to 448 (in bits) (by -224 bits)
+                                                                    'int mca_base_component_2_1_0_t::mca_component_major_version' offset changed from 1184 to 960 (in bits) (by -224 bits)
+                                                                    'int mca_base_component_2_1_0_t::mca_component_minor_version' offset changed from 1216 to 992 (in bits) (by -224 bits)
+                                                                    'int mca_base_component_2_1_0_t::mca_component_release_version' offset changed from 1248 to 1024 (in bits) (by -224 bits)
+                                                                    'mca_base_open_component_1_0_0_fn_t mca_base_component_2_1_0_t::mca_open_component' offset changed from 1280 to 1088 (in bits) (by -192 bits)
+                                                                    'mca_base_close_component_1_0_0_fn_t mca_base_component_2_1_0_t::mca_close_component' offset changed from 1344 to 1152 (in bits) (by -192 bits)
+                                                                    'mca_base_query_component_2_0_0_fn_t mca_base_component_2_1_0_t::mca_query_component' offset changed from 1408 to 1216 (in bits) (by -192 bits)
+                                                                    'mca_base_register_component_params_2_0_0_fn_t mca_base_component_2_1_0_t::mca_register_component_params' offset changed from 1472 to 1280 (in bits) (by -192 bits)
+                                                                    type of 'char mca_base_component_2_1_0_t::reserved[28]' changed:
+                                                                      type name changed from 'char[28]' to 'char[32]'
+                                                                      array type size changed from 224 to 256
+                                                                      array type subrange 1 changed length from 28 to 32
+                                                                    and name of 'mca_base_component_2_1_0_t::reserved' changed to 'mca_base_component_2_0_0_t::reserved' at mca.h:291:1, offset changed from 1568 to 1344 (in bits) (by -224 bits)
+                                                              'mca_base_component_data_t mca_io_base_component_2_0_0_t::io_data' offset changed from 1792 to 1600 (in bits) (by -192 bits)
+                                                              'mca_io_base_component_init_query_fn_t mca_io_base_component_2_0_0_t::io_init_query' offset changed from 2112 to 1920 (in bits) (by -192 bits)
+                                                              type of 'mca_io_base_component_file_query_2_0_0_fn_t mca_io_base_component_2_0_0_t::io_file_query' changed:
+                                                                underlying type 'const mca_io_base_module_2_0_0_t* (ompi_file_t*, mca_io_base_file_t**, int*)*' changed:
+                                                                  in pointed to type 'function type const mca_io_base_module_2_0_0_t* (ompi_file_t*, mca_io_base_file_t**, int*)':
+                                                                    return type changed:
+                                                                      in pointed to type 'const mca_io_base_module_2_0_0_t':
+                                                                        in unqualified underlying type 'struct mca_io_base_module_2_0_0_t' at io.h:280:1:
+                                                                          type size changed from 3392 to 3136 (in bits)
+                                                                          4 data member deletions:
+                                                                            'mca_io_base_module_file_iread_at_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_iread_at_all', at offset 1024 (in bits) at io.h:325:1
+                                                                            'mca_io_base_module_file_iwrite_at_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_iwrite_at_all', at offset 1088 (in bits) at io.h:326:1
+                                                                            'mca_io_base_module_file_iread_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_iread_all', at offset 1536 (in bits) at io.h:335:1
+                                                                            'mca_io_base_module_file_iwrite_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_iwrite_all', at offset 1600 (in bits) at io.h:336:1
+                                                                          49 data member changes:
+                                                                            type of 'mca_io_base_module_file_open_fn_t mca_io_base_module_2_0_0_t::io_module_file_open' changed:
+                                                                              underlying type 'int (ompi_communicator_t*, const char*, int, ompi_info_t*, ompi_file_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_communicator_t*, const char*, int, ompi_info_t*, ompi_file_t*)':
+                                                                                  parameter 1 of type 'ompi_communicator_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_communicator_t' changed, as being reported
+                                                                                  parameter 2 of type 'const char*' changed:
+                                                                                    in pointed to type 'const char':
+                                                                                      entity changed from 'const char' to 'char'
+                                                                                      type size hasn't changed
+                                                                                  parameter 4 of type 'ompi_info_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_info_t' changed at info.h:41:1, as reported earlier
+                                                                                  parameter 5 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_close_fn_t mca_io_base_module_2_0_0_t::io_module_file_close' changed:
+                                                                              underlying type 'int (ompi_file_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_set_size_fn_t mca_io_base_module_2_0_0_t::io_module_file_set_size' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_preallocate_fn_t mca_io_base_module_2_0_0_t::io_module_file_preallocate' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_get_size_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_size' changed:
+                                                                              underlying type 'int (ompi_file_t*, MPI_Offset*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, MPI_Offset*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_get_amode_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_amode' changed:
+                                                                              underlying type 'int (ompi_file_t*, int*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, int*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_set_info_fn_t mca_io_base_module_2_0_0_t::io_module_file_set_info' changed:
+                                                                              underlying type 'int (ompi_file_t*, ompi_info_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, ompi_info_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 2 of type 'ompi_info_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_info_t' changed at info.h:41:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_get_info_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_info' changed:
+                                                                              underlying type 'int (ompi_file_t*, ompi_info_t**)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, ompi_info_t**)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 2 of type 'ompi_info_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_info_t*':
+                                                                                      pointed to type 'struct ompi_info_t' changed at info.h:41:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_set_view_fn_t mca_io_base_module_2_0_0_t::io_module_file_set_view' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, ompi_datatype_t*, ompi_datatype_t*, const char*, ompi_info_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, ompi_datatype_t*, ompi_datatype_t*, const char*, ompi_info_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 3 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 5 of type 'const char*' changed:
+                                                                                    in pointed to type 'const char':
+                                                                                      entity changed from 'const char' to 'char'
+                                                                                      type size hasn't changed
+                                                                                  parameter 6 of type 'ompi_info_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_info_t' changed at info.h:41:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_get_view_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_view' changed:
+                                                                              underlying type 'int (ompi_file_t*, MPI_Offset*, ompi_datatype_t**, ompi_datatype_t**, char*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, MPI_Offset*, ompi_datatype_t**, ompi_datatype_t**, char*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 3 of type 'ompi_datatype_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_datatype_t*':
+                                                                                      pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 4 of type 'ompi_datatype_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_datatype_t*':
+                                                                                      pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_read_at_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_at' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_read_at_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_at_all' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_write_at_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_at' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_write_at_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_at_all' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            type of 'mca_io_base_module_file_iread_at_fn_t mca_io_base_module_2_0_0_t::io_module_file_iread_at' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_request_t**)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_request_t**)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 6 of type 'ompi_request_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_request_t*':
+                                                                                      pointed to type 'struct ompi_request_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_iwrite_at_fn_t mca_io_base_module_2_0_0_t::io_module_file_iwrite_at' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_request_t**)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*, ompi_request_t**)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 6 of type 'ompi_request_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_request_t*':
+                                                                                      pointed to type 'struct ompi_request_t' changed, as being reported
+                                                                            type of 'mca_io_base_module_file_read_fn_t mca_io_base_module_2_0_0_t::io_module_file_read' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 1152 to 1024 (in bits) (by -128 bits)
+                                                                            type of 'mca_io_base_module_file_read_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_all' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 1216 to 1088 (in bits) (by -128 bits)
+                                                                            type of 'mca_io_base_module_file_write_fn_t mca_io_base_module_2_0_0_t::io_module_file_write' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 1280 to 1152 (in bits) (by -128 bits)
+                                                                            type of 'mca_io_base_module_file_write_all_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_all' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 1344 to 1216 (in bits) (by -128 bits)
+                                                                            type of 'mca_io_base_module_file_iread_fn_t mca_io_base_module_2_0_0_t::io_module_file_iread' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 5 of type 'ompi_request_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_request_t*':
+                                                                                      pointed to type 'struct ompi_request_t' changed, as being reported
+                                                                            and offset changed from 1408 to 1280 (in bits) (by -128 bits)
+                                                                            type of 'mca_io_base_module_file_iwrite_fn_t mca_io_base_module_2_0_0_t::io_module_file_iwrite' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 5 of type 'ompi_request_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_request_t*':
+                                                                                      pointed to type 'struct ompi_request_t' changed, as being reported
+                                                                            and offset changed from 1472 to 1344 (in bits) (by -128 bits)
+                                                                            type of 'mca_io_base_module_file_seek_fn_t mca_io_base_module_2_0_0_t::io_module_file_seek' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, int)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, int)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 1664 to 1408 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_get_position_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_position' changed:
+                                                                              underlying type 'int (ompi_file_t*, MPI_Offset*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, MPI_Offset*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 1728 to 1472 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_get_byte_offset_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_byte_offset' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, MPI_Offset*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, MPI_Offset*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 1792 to 1536 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_shared_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_shared' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 1856 to 1600 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_shared_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_shared' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 1920 to 1664 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_iread_shared_fn_t mca_io_base_module_2_0_0_t::io_module_file_iread_shared' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 5 of type 'ompi_request_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_request_t*':
+                                                                                      pointed to type 'struct ompi_request_t' changed, as being reported
+                                                                            and offset changed from 1984 to 1728 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_iwrite_shared_fn_t mca_io_base_module_2_0_0_t::io_module_file_iwrite_shared' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_request_t**)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                                  parameter 5 of type 'ompi_request_t**' has sub-type changes:
+                                                                                    in pointed to type 'ompi_request_t*':
+                                                                                      pointed to type 'struct ompi_request_t' changed, as being reported
+                                                                            and offset changed from 2048 to 1792 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_ordered_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_ordered' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 2112 to 1856 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_ordered_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_ordered' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 2176 to 1920 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_seek_shared_fn_t mca_io_base_module_2_0_0_t::io_module_file_seek_shared' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, int)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, int)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 2240 to 1984 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_get_position_shared_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_position_shared' changed:
+                                                                              underlying type 'int (ompi_file_t*, MPI_Offset*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, MPI_Offset*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 2304 to 2048 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_at_all_begin_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_at_all_begin' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 2368 to 2112 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_at_all_end_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_at_all_end' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 2432 to 2176 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_at_all_begin_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_at_all_begin' changed:
+                                                                              underlying type 'int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, typedef MPI_Offset, void*, int, ompi_datatype_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 5 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 2496 to 2240 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_at_all_end_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_at_all_end' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 2560 to 2304 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_all_begin_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_all_begin' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 2624 to 2368 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_all_end_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_all_end' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 2688 to 2432 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_all_begin_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_all_begin' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 2752 to 2496 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_all_end_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_all_end' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 2816 to 2560 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_ordered_begin_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_ordered_begin' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 2880 to 2624 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_read_ordered_end_fn_t mca_io_base_module_2_0_0_t::io_module_file_read_ordered_end' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 2944 to 2688 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_ordered_begin_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_ordered_begin' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, int, ompi_datatype_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, int, ompi_datatype_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 4 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 3008 to 2752 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_write_ordered_end_fn_t mca_io_base_module_2_0_0_t::io_module_file_write_ordered_end' changed:
+                                                                              underlying type 'int (ompi_file_t*, void*, ompi_status_public_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, void*, ompi_status_public_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 3072 to 2816 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_get_type_extent_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_type_extent' changed:
+                                                                              underlying type 'int (ompi_file_t*, ompi_datatype_t*, MPI_Aint*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, ompi_datatype_t*, MPI_Aint*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                                  parameter 2 of type 'ompi_datatype_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                            and offset changed from 3136 to 2880 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_set_atomicity_fn_t mca_io_base_module_2_0_0_t::io_module_file_set_atomicity' changed:
+                                                                              underlying type 'int (ompi_file_t*, int)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, int)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 3200 to 2944 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_get_atomicity_fn_t mca_io_base_module_2_0_0_t::io_module_file_get_atomicity' changed:
+                                                                              underlying type 'int (ompi_file_t*, int*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*, int*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 3264 to 3008 (in bits) (by -256 bits)
+                                                                            type of 'mca_io_base_module_file_sync_fn_t mca_io_base_module_2_0_0_t::io_module_file_sync' changed:
+                                                                              underlying type 'int (ompi_file_t*)*' changed:
+                                                                                in pointed to type 'function type int (ompi_file_t*)':
+                                                                                  parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                                    pointed to type 'struct ompi_file_t' changed, as being reported
+                                                                            and offset changed from 3328 to 3072 (in bits) (by -256 bits)
+                                                                    parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                      pointed to type 'struct ompi_file_t' changed, as being reported
+                                                              and offset changed from 2176 to 1984 (in bits) (by -192 bits)
+                                                              type of 'mca_io_base_component_file_unquery_fn_t mca_io_base_component_2_0_0_t::io_file_unquery' changed:
+                                                                underlying type 'int (ompi_file_t*, mca_io_base_file_t*)*' changed:
+                                                                  in pointed to type 'function type int (ompi_file_t*, mca_io_base_file_t*)':
+                                                                    parameter 1 of type 'ompi_file_t*' has sub-type changes:
+                                                                      pointed to type 'struct ompi_file_t' changed, as being reported
+                                                              and offset changed from 2240 to 2048 (in bits) (by -192 bits)
+                                                              type of 'mca_io_base_component_file_delete_query_fn_t mca_io_base_component_2_0_0_t::io_delete_query' changed:
+                                                                underlying type 'int (const char*, ompi_info_t*, mca_io_base_delete_t**, bool*, int*)*' changed:
+                                                                  in pointed to type 'function type int (const char*, ompi_info_t*, mca_io_base_delete_t**, bool*, int*)':
+                                                                    parameter 1 of type 'const char*' changed:
+                                                                      in pointed to type 'const char':
+                                                                        entity changed from 'const char' to 'char'
+                                                                        type size hasn't changed
+                                                                    parameter 2 of type 'ompi_info_t*' has sub-type changes:
+                                                                      pointed to type 'struct ompi_info_t' changed at info.h:41:1, as reported earlier
+                                                              and offset changed from 2304 to 2112 (in bits) (by -192 bits)
+                                                              type of 'mca_io_base_component_file_delete_unselect_fn_t mca_io_base_component_2_0_0_t::io_delete_unquery' changed:
+                                                                underlying type 'int (const char*, ompi_info_t*, mca_io_base_delete_t*)*' changed:
+                                                                  in pointed to type 'function type int (const char*, ompi_info_t*, mca_io_base_delete_t*)':
+                                                                    parameter 1 of type 'const char*' changed:
+                                                                      in pointed to type 'const char':
+                                                                        entity changed from 'const char' to 'char'
+                                                                        type size hasn't changed
+                                                                    parameter 2 of type 'ompi_info_t*' has sub-type changes:
+                                                                      pointed to type 'struct ompi_info_t' changed at info.h:41:1, as reported earlier
+                                                              and offset changed from 2368 to 2176 (in bits) (by -192 bits)
+                                                              type of 'mca_io_base_component_file_delete_select_fn_t mca_io_base_component_2_0_0_t::io_delete_select' changed:
+                                                                underlying type 'int (const char*, ompi_info_t*, mca_io_base_delete_t*)*' changed:
+                                                                  in pointed to type 'function type int (const char*, ompi_info_t*, mca_io_base_delete_t*)':
+                                                                    parameter 1 of type 'const char*' changed:
+                                                                      in pointed to type 'const char':
+                                                                        entity changed from 'const char' to 'char'
+                                                                        type size hasn't changed
+                                                                    parameter 2 of type 'ompi_info_t*' has sub-type changes:
+                                                                      pointed to type 'struct ompi_info_t' changed at info.h:41:1, as reported earlier
+                                                              and offset changed from 2432 to 2240 (in bits) (by -192 bits)
+                                                              type of 'mca_io_base_component_register_datarep_fn_t mca_io_base_component_2_0_0_t::io_register_datarep' changed:
+                                                                underlying type 'int (const char*, MPI_Datarep_conversion_function*, MPI_Datarep_conversion_function*, MPI_Datarep_extent_function*, void*)*' changed:
+                                                                  in pointed to type 'function type int (const char*, MPI_Datarep_conversion_function*, MPI_Datarep_conversion_function*, MPI_Datarep_extent_function*, void*)':
+                                                                    parameter 1 of type 'const char*' changed:
+                                                                      in pointed to type 'const char':
+                                                                        entity changed from 'const char' to 'char'
+                                                                        type size hasn't changed
+                                                                    parameter 2 of type 'MPI_Datarep_conversion_function*' has sub-type changes:
+                                                                      in pointed to type 'typedef MPI_Datarep_conversion_function' at mpi.h:350:1:
+                                                                        underlying type 'function type int (void*, typedef MPI_Datatype, int, void*, typedef MPI_Offset, void*)' changed:
+                                                                          parameter 2 of type 'typedef MPI_Datatype' has sub-type changes:
+                                                                            underlying type 'ompi_datatype_t*' changed:
+                                                                              pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                                    parameter 3 of type 'MPI_Datarep_conversion_function*' has sub-type changes:
+                                                                      pointed to type 'typedef MPI_Datarep_conversion_function' changed at mpi.h:378:1, as reported earlier
+                                                                    parameter 4 of type 'MPI_Datarep_extent_function*' has sub-type changes:
+                                                                      in pointed to type 'typedef MPI_Datarep_extent_function' at mpi.h:349:1:
+                                                                        underlying type 'function type int (typedef MPI_Datatype, MPI_Aint*, void*)' changed:
+                                                                          parameter 1 of type 'typedef MPI_Datatype' has sub-type changes:
+                                                                            underlying type 'ompi_datatype_t*' changed:
+                                                                              pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                                                              and offset changed from 2496 to 2304 (in bits) (by -192 bits)
+                                                  and offset changed from 1088 to 576 (in bits) (by -512 bits)
+                                                  type of 'mca_io_base_modules_t ompi_file_t::f_io_selected_module' changed:
+                                                    underlying type 'union mca_io_base_modules_t' at io.h:376:1 changed:
+                                                      type size changed from 3392 to 3136 (in bits)
+                                                      1 data member change:
+                                                        type of 'mca_io_base_module_2_0_0_t mca_io_base_modules_t::v2_0_0' changed:
+                                                          underlying type 'struct mca_io_base_module_2_0_0_t' changed at io.h:301:1, as reported earlier
+                                                  and offset changed from 3648 to 2944 (in bits) (by -704 bits)
+                                                  'mca_io_base_file_t* ompi_file_t::f_io_selected_data' offset changed from 7040 to 6080 (in bits) (by -960 bits)
+                                            type of 'ompi_win_t* ompi_peruse_handle_t::win' changed:
+                                              pointed to type 'struct ompi_win_t' changed at win.h:75:1, as reported earlier
+                                    and offset changed from 1792 to 1984 (in bits) (by +192 bits)
+                                    type of 'ompi_errhandler_t* ompi_communicator_t::error_handler' changed:
+                                      pointed to type 'typedef ompi_errhandler_t' changed at errhandler.h:135:1, as reported earlier
+                                    and offset changed from 1856 to 2048 (in bits) (by +192 bits)
+                                    'ompi_errhandler_type_t ompi_communicator_t::errhandler_type' offset changed from 1920 to 2112 (in bits) (by +192 bits)
+                                    'mca_pml_comm_t* ompi_communicator_t::c_pml_comm' offset changed from 1984 to 2176 (in bits) (by +192 bits)
+                                    type of 'mca_coll_base_comm_coll_t* ompi_communicator_t::c_coll' changed:
+                                      entity changed from 'mca_coll_base_comm_coll_t*' to 'typedef mca_coll_base_comm_coll_t' at coll.h:372:1
+                                      type size changed from 64 to 2048 (in bits)
+                                    and offset changed from 2048 to 2240 (in bits) (by +192 bits)
+                              type of 'ompi_file_t* ompi_mpi_object_t::file' changed:
+                                pointed to type 'struct ompi_file_t' changed at file.h:46:1, as reported earlier
+                              type of 'ompi_win_t* ompi_mpi_object_t::win' changed:
+                                pointed to type 'struct ompi_win_t' changed at win.h:75:1, as reported earlier
+                            type changed from:
+                              union ompi_mpi_object_t{ompi_communicator_t* comm; ompi_file_t* file; ompi_win_t* win;}
+                            to:
+                              union ompi_mpi_object_t{ompi_communicator_t* comm; ompi_file_t* file; ompi_win_t* win;}
+                        and offset changed from 1152 to 1024 (in bits) (by -128 bits)
+                  type of 'volatile int32_t mca_pml_base_request_t::req_pml_complete' changed:
+                    'volatile int32_t' changed to 'volatile bool'
+                  and offset changed from 1216 to 1088 (in bits) (by -128 bits)
+                  type of 'volatile int32_t mca_pml_base_request_t::req_free_called' changed:
+                    'volatile int32_t' changed to 'volatile bool'
+                  and offset changed from 1248 to 1280 (in bits) (by +32 bits)
+                  type of 'mca_pml_base_request_type_t mca_pml_base_request_t::req_type' changed:
+                    underlying type 'enum __anonymous_enum__2' at pml_base_request_dbg.h:23:1 changed:
+                      type size hasn't changed
+                      2 enumerator deletions:
+                        '__anonymous_enum__2::MCA_PML_REQUEST_IMPROBE' value '5'
+                        '__anonymous_enum__2::MCA_PML_REQUEST_MPROBE' value '6'
+                  and offset changed from 1280 to 1120 (in bits) (by -160 bits)
+                  type of 'ompi_communicator_t* mca_pml_base_request_t::req_comm' changed:
+                    pointed to type 'struct ompi_communicator_t' changed at communicator.h:118:1, as reported earlier
+                  and offset changed from 1344 to 1152 (in bits) (by -192 bits)
+                  type of 'ompi_datatype_t* mca_pml_base_request_t::req_datatype' changed:
+                    pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+                  and offset changed from 1408 to 1216 (in bits) (by -192 bits)
+                  type of 'opal_convertor_t mca_pml_base_request_t::req_convertor' changed:
+                    underlying type 'struct opal_convertor_t' at opal_convertor.h:85:1 changed:
+                      type size hasn't changed
+                      2 data member changes:
+                        type of 'const opal_datatype_t* opal_convertor_t::pDesc' changed:
+                          in pointed to type 'const opal_datatype_t':
+                            unqualified underlying type 'typedef opal_datatype_t' changed at opal_datatype.h:140:1, as reported earlier
+                        type of 'convertor_advance_fct_t opal_convertor_t::fAdvance' changed:
+                          underlying type 'typedef int32_t (opal_convertor_t*, iovec*, uint32_t*, size_t*)*' changed:
+                            in pointed to type 'function type typedef int32_t (opal_convertor_t*, iovec*, uint32_t*, size_t*)':
+                              parameter 1 of type 'opal_convertor_t*' has sub-type changes:
+                                in pointed to type 'typedef opal_convertor_t' at opal_convertor.h:61:1:
+                                  underlying type 'struct opal_convertor_t' changed, as being reported
+                  and offset changed from 1472 to 1344 (in bits) (by -128 bits)
+                  'void* mca_pml_base_request_t::req_addr' offset changed from 3456 to 3328 (in bits) (by -128 bits)
+                  'size_t mca_pml_base_request_t::req_count' offset changed from 3520 to 3392 (in bits) (by -128 bits)
+                  'int32_t mca_pml_base_request_t::req_peer' offset changed from 3584 to 3456 (in bits) (by -128 bits)
+                  'int32_t mca_pml_base_request_t::req_tag' offset changed from 3616 to 3488 (in bits) (by -128 bits)
+                  type of 'ompi_proc_t* mca_pml_base_request_t::req_proc' changed:
+                    pointed to type 'struct ompi_proc_t' changed at proc.h:71:1, as reported earlier
+                  and offset changed from 3648 to 3520 (in bits) (by -128 bits)
+                  'uint64_t mca_pml_base_request_t::req_sequence' offset changed from 3712 to 3584 (in bits) (by -128 bits)
+            'size_t mca_pml_base_recv_request_t::req_bytes_packed' offset changed from 3776 to 3648 (in bits) (by -128 bits)
+
+  [C] 'mca_pml_base_request_t* mca_pml_base_request_t_type_force_inclusion' was changed at ompi_debuggers.c:117:1:
+    type of variable changed:
+      pointed to type 'typedef mca_pml_base_request_t' changed at pml_base_request.h:80:1, as reported earlier
+
+  [C] 'mca_pml_base_send_request_t* mca_pml_base_send_request_t_type_force_inclusion' was changed at ompi_debuggers.c:118:1:
+    type of variable changed:
+      in pointed to type 'typedef mca_pml_base_send_request_t' at pml_base_sendreq.h:42:1:
+        underlying type 'struct mca_pml_base_send_request_t' at pml_base_sendreq.h:42:1 changed:
+          type size changed from 3968 to 3840 (in bits)
+          4 data member changes:
+            type of 'mca_pml_base_request_t mca_pml_base_send_request_t::req_base' changed, as reported earlier
+            'void* mca_pml_base_send_request_t::req_addr' offset changed from 3776 to 3648 (in bits) (by -128 bits)
+            'size_t mca_pml_base_send_request_t::req_bytes_packed' offset changed from 3840 to 3712 (in bits) (by -128 bits)
+            'mca_pml_base_send_mode_t mca_pml_base_send_request_t::req_send_mode' offset changed from 3904 to 3776 (in bits) (by -128 bits)
+
+  [C] 'ompi_communicator_t* ompi_communicator_t_type_force_inclusion' was changed at ompi_debuggers.c:121:1:
+    type of variable changed:
+      pointed to type 'struct ompi_communicator_t' changed at communicator.h:118:1, as reported earlier
+
+  [C] 'ompi_datatype_t* ompi_datatype_t_type_force_inclusion' was changed at ompi_debuggers.c:125:1:
+    type of variable changed:
+      pointed to type 'struct ompi_datatype_t' changed at ompi_datatype.h:67:1, as reported earlier
+
+  [C] 'ompi_group_t* ompi_group_t_type_force_inclusion' was changed at ompi_debuggers.c:122:1:
+    type of variable changed:
+      pointed to type 'struct ompi_group_t' changed at group.h:83:1, as reported earlier
+
+  [C] 'ompi_request_t* ompi_request_t_type_force_inclusion' was changed at ompi_debuggers.c:116:1:
+    type of variable changed:
+      pointed to type 'struct ompi_request_t' changed at request.h:104:1, as reported earlier
+
+  [C] 'opal_datatype_t* opal_datatype_t_type_force_inclusion' was changed at ompi_debuggers.c:124:1:
+    type of variable changed:
+      pointed to type 'typedef opal_datatype_t' changed at opal_datatype.h:140:1, as reported earlier
+
+  [C] 'opal_list_item_t* opal_list_item_t_type_force_inclusion' was changed at ompi_debuggers.c:112:1:
+    type of variable changed:
+      pointed to type 'typedef opal_list_item_t' changed at opal_list.h:122:1, as reported earlier
+
+  [C] 'opal_list_t* opal_list_t_type_force_inclusion' was changed at ompi_debuggers.c:113:1:
+    type of variable changed:
+      pointed to type 'typedef opal_list_t' changed at opal_list.h:163:1, as reported earlier
+
+359 Removed variable symbols not referenced by debug info:
+
+  [D] ADIOI_cb_config_list_keyval
+  [D] ADIOI_syshints
+  [D] ADIO_same_amode
+  [D] NBC_Schedule_class
+  [D] _dict_free
+  [D] _dict_malloc
+  [D] comm_time
+  [D] end_comm_time
+  [D] end_exch
+  [D] end_rcomm_time
+  [D] end_read_time
+  [D] end_rexch
+  [D] end_write_time
+  [D] exch_write
+  [D] fbtl_posix_max_aio_active_reqs
+  [D] filtered_messages_count
+  [D] filtered_sent_data
+  [D] global_bl
+  [D] libnbc_ibcast_skip_dt_decision
+  [D] mca_bml_base_static_components
+  [D] mca_bml_lock
+  [D] mca_bml_r2
+  [D] mca_coll_base_comm_t_class
+  [D] mca_coll_base_static_components
+  [D] mca_coll_basic_component_version_string
+  [D] mca_coll_basic_crossover
+  [D] mca_coll_basic_module_t_class
+  [D] mca_coll_basic_priority
+  [D] mca_coll_inter_component_version_string
+  [D] mca_coll_inter_module_t_class
+  [D] mca_coll_inter_priority_param
+  [D] mca_coll_inter_verbose_param
+  [D] mca_coll_libnbc_component
+  [D] mca_coll_libnbc_component_version_string
+  [D] mca_coll_self_component_version_string
+  [D] mca_coll_self_module_t_class
+  [D] mca_coll_sm_component_version_string
+  [D] mca_coll_sm_module_t_class
+  [D] mca_coll_sm_one
+  [D] mca_coll_sync_component_version_string
+  [D] mca_coll_sync_module_t_class
+  [D] mca_coll_tuned_module_t_class
+  [D] mca_crcp_base_static_components
+  [D] mca_fbtl
+  [D] mca_fbtl_base_selected_component
+  [D] mca_fbtl_base_static_components
+  [D] mca_fbtl_posix_component
+  [D] mca_fbtl_posix_component_version_string
+  [D] mca_fbtl_posix_priority
+  [D] mca_fcoll_base_static_components
+  [D] mca_fcoll_dynamic_component
+  [D] mca_fcoll_dynamic_component_version_string
+  [D] mca_fcoll_dynamic_gen2_component
+  [D] mca_fcoll_dynamic_gen2_component_version_string
+  [D] mca_fcoll_dynamic_gen2_num_groups
+  [D] mca_fcoll_dynamic_gen2_priority
+  [D] mca_fcoll_dynamic_gen2_write_chunksize
+  [D] mca_fcoll_dynamic_priority
+  [D] mca_fcoll_individual_component
+  [D] mca_fcoll_individual_component_version_string
+  [D] mca_fcoll_individual_priority
+  [D] mca_fcoll_static_component
+  [D] mca_fcoll_static_component_version_string
+  [D] mca_fcoll_static_priority
+  [D] mca_fcoll_two_phase_component
+  [D] mca_fcoll_two_phase_component_version_string
+  [D] mca_fcoll_two_phase_priority
+  [D] mca_fs_base_static_components
+  [D] mca_fs_ufs_component
+  [D] mca_fs_ufs_component_version_string
+  [D] mca_fs_ufs_priority
+  [D] mca_hook_base_static_components
+  [D] mca_io_base_static_components
+  [D] mca_io_ompio_bytes_per_agg
+  [D] mca_io_ompio_coll_timing_info
+  [D] mca_io_ompio_component
+  [D] mca_io_ompio_component_version_string
+  [D] mca_io_ompio_cycle_buffer_size
+  [D] mca_io_ompio_grouping_option
+  [D] mca_io_ompio_module
+  [D] mca_io_ompio_mutex
+  [D] mca_io_ompio_num_aggregators
+  [D] mca_io_ompio_pending_requests
+  [D] mca_io_ompio_progress_is_registered
+  [D] mca_io_ompio_record_offset_info
+  [D] mca_io_ompio_sharedfp_lazy_open
+  [D] mca_io_romio314_component
+  [D] mca_io_romio314_component_version_string
+  [D] mca_io_romio314_module
+  [D] mca_io_romio314_mutex
+  [D] mca_mtl_base_static_components
+  [D] mca_ompio_request_t_class
+  [D] mca_op_base_static_components
+  [D] mca_osc_base_static_components
+  [D] mca_osc_sm_component
+  [D] mca_pml_base_static_components
+  [D] mca_pml_bsend_addr
+  [D] mca_pml_bsend_base
+  [D] mca_pml_bsend_userbase
+  [D] mca_pml_cm_hvy_recv_request_t_class
+  [D] mca_pml_cm_hvy_send_request_t_class
+  [D] mca_pml_cm_request_t_class
+  [D] mca_pml_cm_send_request_t_class
+  [D] mca_pml_cm_thin_recv_request_t_class
+  [D] mca_pml_cm_thin_send_request_t_class
+  [D] mca_pml_monitoring
+  [D] mca_pml_monitoring_component
+  [D] mca_pml_ob1
+  [D] mca_pml_ob1_buffer_t_class
+  [D] mca_pml_ob1_comm_proc_t_class
+  [D] mca_pml_ob1_comm_t_class
+  [D] mca_pml_ob1_matching_protection
+  [D] mca_pml_ob1_output
+  [D] mca_pml_ob1_pckt_pending_t_class
+  [D] mca_pml_ob1_rdma_frag_t_class
+  [D] mca_pml_ob1_recv_frag_t_class
+  [D] mca_pml_ob1_recv_request_t_class
+  [D] mca_pml_ob1_recvreq
+  [D] mca_pml_ob1_send_range_t_class
+  [D] mca_pml_ob1_send_request_t_class
+  [D] mca_pml_ob1_sendreq
+  [D] mca_rte_base_static_components
+  [D] mca_rte_orte_component
+  [D] mca_sharedfp
+  [D] mca_sharedfp_base_static_components
+  [D] mca_sharedfp_individual_component
+  [D] mca_sharedfp_individual_component_version_string
+  [D] mca_sharedfp_individual_priority
+  [D] mca_sharedfp_individual_verbose
+  [D] mca_sharedfp_lockedfile_component
+  [D] mca_sharedfp_lockedfile_component_version_string
+  [D] mca_sharedfp_lockedfile_priority
+  [D] mca_sharedfp_lockedfile_verbose
+  [D] mca_sharedfp_sm_component
+  [D] mca_sharedfp_sm_component_version_string
+  [D] mca_sharedfp_sm_priority
+  [D] mca_sharedfp_sm_verbose
+  [D] mca_topo_base_comm_cart_2_2_0_t_class
+  [D] mca_topo_base_comm_dist_graph_2_2_0_t_class
+  [D] mca_topo_base_comm_graph_2_2_0_t_class
+  [D] mca_topo_base_module_t_class
+  [D] mca_topo_base_static_components
+  [D] mca_topo_basic_component
+  [D] mca_topo_basic_component_version_string
+  [D] mca_topo_treematch_component
+  [D] mca_topo_treematch_component_version_string
+  [D] mca_topo_treematch_module_t_class
+  [D] mca_vprotocol_base_static_components
+  [D] mca_vprotocol_pessimist_recv_request_t_class
+  [D] mca_vprotocol_pessimist_send_request_t_class
+  [D] messages_count
+  [D] mpi_fortran_unweighted_
+  [D] mpi_fortran_weights_empty_
+  [D] mpit_big_lock
+  [D] mpit_init_count
+  [D] netpatterns_base_verbose
+  [D] ompi_add_procs_cutoff
+  [D] ompi_async_mpi_finalize
+  [D] ompi_async_mpi_init
+  [D] ompi_bml_base_framework
+  [D] ompi_coll_base_framework
+  [D] ompi_coll_libnbc_module_t_class
+  [D] ompi_coll_libnbc_request_t_class
+  [D] ompi_coll_self_priority
+  [D] ompi_coll_tuned_alltoall_intermediate_msg
+  [D] ompi_coll_tuned_alltoall_small_msg
+  [D] ompi_coll_tuned_component_version_string
+  [D] ompi_coll_tuned_dynamic_rules_filename
+  [D] ompi_coll_tuned_forced_max_algorithms
+  [D] ompi_coll_tuned_forced_params
+  [D] ompi_coll_tuned_init_chain_fanout
+  [D] ompi_coll_tuned_init_max_requests
+  [D] ompi_coll_tuned_init_tree_fanout
+  [D] ompi_coll_tuned_priority
+  [D] ompi_coll_tuned_stream
+  [D] ompi_coll_tuned_use_dynamic_rules
+  [D] ompi_comm_allreduce_context_t_class
+  [D] ompi_comm_cid_context_t_class
+  [D] ompi_comm_f_to_c_table
+  [D] ompi_comm_idup_with_info_context_t_class
+  [D] ompi_comm_num_dyncomm
+  [D] ompi_comm_request_initialized
+  [D] ompi_comm_request_item_t_class
+  [D] ompi_comm_request_progress_active
+  [D] ompi_comm_request_t_class
+  [D] ompi_cr_verbosity
+  [D] ompi_crcp_base_btl_state_t_class
+  [D] ompi_crcp_base_framework
+  [D] ompi_datatype_basicDatatypes
+  [D] ompi_datatype_external32_arch_id
+  [D] ompi_datatype_f_to_c_table
+  [D] ompi_datatype_number_of_predefined_data
+  [D] ompi_enable_timing
+  [D] ompi_enable_timing_ext
+  [D] ompi_errcode_intern_t_class
+  [D] ompi_errhandler_t_class
+  [D] ompi_fbtl_base_framework
+  [D] ompi_fcoll_base_framework
+  [D] ompi_file_f_to_c_table
+  [D] ompi_file_t_class
+  [D] ompi_fs_base_framework
+  [D] ompi_hook_base_framework
+  [D] ompi_info_f_to_c_table
+  [D] ompi_info_type_base
+  [D] ompi_info_type_ompi
+  [D] ompi_io_base_framework
+  [D] ompi_message_f_to_c_table
+  [D] ompi_message_free_list
+  [D] ompi_message_no_proc
+  [D] ompi_message_null
+  [D] ompi_message_t_class
+  [D] ompi_mpi_2dblprec_addr
+  [D] ompi_mpi_2integer_addr
+  [D] ompi_mpi_2real_addr
+  [D] ompi_mpi_aint
+  [D] ompi_mpi_bootstrap_mutex
+  [D] ompi_mpi_c_bool
+  [D] ompi_mpi_c_complex
+  [D] ompi_mpi_c_double_complex
+  [D] ompi_mpi_c_float_complex
+  [D] ompi_mpi_c_long_double_complex
+  [D] ompi_mpi_character_addr
+  [D] ompi_mpi_comm_null_addr
+  [D] ompi_mpi_comm_self_addr
+  [D] ompi_mpi_comm_world_addr
+  [D] ompi_mpi_complex16_addr
+  [D] ompi_mpi_complex32_addr
+  [D] ompi_mpi_complex8_addr
+  [D] ompi_mpi_count
+  [D] ompi_mpi_cplex_addr
+  [D] ompi_mpi_dblcplex_addr
+  [D] ompi_mpi_dblprec_addr
+  [D] ompi_mpi_dynamics_enabled
+  [D] ompi_mpi_errcode_t_class
+  [D] ompi_mpi_errhandler_null_addr
+  [D] ompi_mpi_errors_are_fatal_addr
+  [D] ompi_mpi_errors_return_addr
+  [D] ompi_mpi_errors_throw_exceptions_addr
+  [D] ompi_mpi_event_tick_rate
+  [D] ompi_mpi_f90_complex_hashtable
+  [D] ompi_mpi_f90_integer_hashtable
+  [D] ompi_mpi_f90_real_hashtable
+  [D] ompi_mpi_file_bootstrap_mutex
+  [D] ompi_mpi_file_null_addr
+  [D] ompi_mpi_finalize_started
+  [D] ompi_mpi_group_empty_addr
+  [D] ompi_mpi_group_null_addr
+  [D] ompi_mpi_have_sparse_group_storage
+  [D] ompi_mpi_info_env
+  [D] ompi_mpi_info_null_addr
+  [D] ompi_mpi_init_started
+  [D] ompi_mpi_int16_t
+  [D] ompi_mpi_int32_t
+  [D] ompi_mpi_int64_t
+  [D] ompi_mpi_int8_t
+  [D] ompi_mpi_integer16_addr
+  [D] ompi_mpi_integer1_addr
+  [D] ompi_mpi_integer2_addr
+  [D] ompi_mpi_integer4_addr
+  [D] ompi_mpi_integer8_addr
+  [D] ompi_mpi_integer_addr
+  [D] ompi_mpi_keep_fqdn_hostnames
+  [D] ompi_mpi_logical1_addr
+  [D] ompi_mpi_logical2_addr
+  [D] ompi_mpi_logical4_addr
+  [D] ompi_mpi_logical8_addr
+  [D] ompi_mpi_logical_addr
+  [D] ompi_mpi_offset
+  [D] ompi_mpi_ompio_bootstrap_mutex
+  [D] ompi_mpi_op_band_addr
+  [D] ompi_mpi_op_bor_addr
+  [D] ompi_mpi_op_bxor_addr
+  [D] ompi_mpi_op_land_addr
+  [D] ompi_mpi_op_lor_addr
+  [D] ompi_mpi_op_lxor_addr
+  [D] ompi_mpi_op_max_addr
+  [D] ompi_mpi_op_maxloc_addr
+  [D] ompi_mpi_op_min_addr
+  [D] ompi_mpi_op_minloc_addr
+  [D] ompi_mpi_op_no_op
+  [D] ompi_mpi_op_no_op_addr
+  [D] ompi_mpi_op_null_addr
+  [D] ompi_mpi_op_prod_addr
+  [D] ompi_mpi_op_replace_addr
+  [D] ompi_mpi_op_sum_addr
+  [D] ompi_mpi_preconnect_mpi
+  [D] ompi_mpi_real16_addr
+  [D] ompi_mpi_real4_addr
+  [D] ompi_mpi_real8_addr
+  [D] ompi_mpi_real_addr
+  [D] ompi_mpi_show_mca_params_string
+  [D] ompi_mpi_status_ignore_addr
+  [D] ompi_mpi_statuses_ignore_addr
+  [D] ompi_mpi_uint16_t
+  [D] ompi_mpi_uint32_t
+  [D] ompi_mpi_uint64_t
+  [D] ompi_mpi_uint8_t
+  [D] ompi_mpi_unavailable
+  [D] ompi_mpi_win_null_addr
+  [D] ompi_mpi_yield_when_idle
+  [D] ompi_mpiext_components
+  [D] ompi_mtl_base_framework
+  [D] ompi_namelist_t_class
+  [D] ompi_op_base_framework
+  [D] ompi_op_f_to_c_table
+  [D] ompi_orte_tracker_t_class
+  [D] ompi_osc_base_framework
+  [D] ompi_osc_pt2pt_ddt_buffer_t_class
+  [D] ompi_osc_pt2pt_frag_t_class
+  [D] ompi_osc_pt2pt_module_template
+  [D] ompi_osc_pt2pt_no_locks
+  [D] ompi_osc_pt2pt_peer_t_class
+  [D] ompi_osc_pt2pt_pending_lock_t_class
+  [D] ompi_osc_pt2pt_pending_t_class
+  [D] ompi_osc_pt2pt_receive_t_class
+  [D] ompi_osc_pt2pt_request_t_class
+  [D] ompi_osc_pt2pt_sync_t_class
+  [D] ompi_osc_rdma_aggregation_t_class
+  [D] ompi_osc_rdma_frag_t_class
+  [D] ompi_osc_rdma_module_rdma_template
+  [D] ompi_osc_rdma_peer_basic_t_class
+  [D] ompi_osc_rdma_peer_dynamic_t_class
+  [D] ompi_osc_rdma_peer_extended_t_class
+  [D] ompi_osc_rdma_peer_t_class
+  [D] ompi_osc_rdma_pending_op_t_class
+  [D] ompi_osc_rdma_request_t_class
+  [D] ompi_osc_rdma_sync_t_class
+  [D] ompi_osc_sm_module_template
+  [D] ompi_pml_base_bsend_allocator_name
+  [D] ompi_pml_base_framework
+  [D] ompi_pml_cm
+  [D] ompi_proc_list
+  [D] ompi_proc_t_class
+  [D] ompi_request_null_addr
+  [D] ompi_rte_base_framework
+  [D] ompi_rte_initialized
+  [D] ompi_rte_orte_component_version_string
+  [D] ompi_sharedfp_base_framework
+  [D] ompi_topo_base_framework
+  [D] ompi_vprotocol_base_framework
+  [D] ompi_win_accumulate_ops
+  [D] ompi_win_accumulate_order
+  [D] osc_pt2pt_accumulate_data_t_class
+  [D] osc_pt2pt_pending_acc_t_class
+  [D] pml_selected_component
+  [D] pml_selected_module
+  [D] rcomm_time
+  [D] read_exch
+  [D] read_time
+  [D] send_completion_callbacks
+  [D] sent_data
+  [D] start_comm_time
+  [D] start_exch
+  [D] start_rcomm_time
+  [D] start_read_time
+  [D] start_rexch
+  [D] start_write_time
+  [D] translation_ht
+  [D] write_time
+
