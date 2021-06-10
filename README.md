@@ -2,7 +2,7 @@
 
 ![https://avatars.githubusercontent.com/u/85255731?s=200&v=4](https://avatars.githubusercontent.com/u/85255731?s=200&v=4)
 
-This repository does an automated retrieval of results from [build-abi-containers](https://github.com/builsi/build-abi-containers).
+This repository does an automated retrieval of results from [build-abi-containers](https://github.com/buildsi/build-abi-containers).
 This works via the [GitHub workflow](.github/workflows/artifacts.yml) that runs
 the script [get_artifacts.py](get_artifacts.py) nightly to do the following:
 
