@@ -30,6 +30,7 @@ jobs:
           
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@users.noreply.github.com"
+          git checkout main
           git add artifacts/*
 
           git commit -a -m "Automated push with new artifact results $(date '+%Y-%m-%d')" || exit 0
