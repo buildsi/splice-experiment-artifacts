@@ -1,0 +1,52 @@
+library: "/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-2.0.0-hvlamaz4jdwsmi5gds2pmzaa3um3frnm/lib/libmath.so"
+locations: 
+  - function:
+      name: _ZN11MathLibrary10Arithmetic8SubtractEdd
+      parameters:
+        - name: a
+          type: Float64
+          location: %xmm0
+          direction: import
+        - name: b
+          type: Float64
+          location: %xmm1
+          direction: import
+  - function:
+      name: _ZN11MathLibrary10Arithmetic3AddEii
+      parameters:
+        - name: a
+          type: Integer32
+          location: %rdi
+          direction: import
+        - name: b
+          type: Integer32
+          location: %rsi
+          direction: import
+  - function:
+      name: _fini
+      parameters:
+  - function:
+      name: _init
+      parameters:
+  - function:
+      name: _ZN11MathLibrary10Arithmetic6DivideEdd
+      parameters:
+        - name: a
+          type: Float64
+          location: %xmm0
+          direction: import
+        - name: b
+          type: Float64
+          location: %xmm1
+          direction: import
+  - function:
+      name: _ZN11MathLibrary10Arithmetic8MultiplyEdd
+      parameters:
+        - name: a
+          type: Float64
+          location: %xmm0
+          direction: import
+        - name: b
+          type: Float64
+          location: %xmm1
+          direction: import
