@@ -1,0 +1,8 @@
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic8SubtractEdd, a, Float64, "%xmm0", import)
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic8SubtractEdd, b, Float64, "%xmm1", import)
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic8MultiplyEdd, a, Float64, "%xmm0", import)
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic8MultiplyEdd, b, Float64, "%xmm1", import)
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic6DivideEdd, a, Float64, "%xmm0", import)
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic6DivideEdd, b, Float64, "%xmm1", import)
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic3AddEdd, a, Float64, "%xmm0", import)
+abi_typelocation("/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/mathclient-1.0.0-eztzlw3my5mrzohcujj3qamrznq2kraf/lib/libmath.so", _ZN11MathLibrary10Arithmetic3AddEdd, b, Float64, "%xmm1", import)
