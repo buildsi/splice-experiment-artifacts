@@ -1,0 +1,71 @@
+<abi-corpus path='/opt/spack/opt/spack/linux-ubuntu18.04-x86_64/gcc-7.5.0/tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/lib/libfoo.so' architecture='elf-amd-x86_64'>
+  <elf-function-symbols>
+    <elf-symbol name='_fini' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='func' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='getdouble' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='getint' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='getlongdouble' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='getm256' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='getm512' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='getstructparm' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr version='1.0' address-size='64' path='foo.c' comp-dir-path='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src' language='LANG_C99'>
+    <type-decl name='double' size-in-bits='64' id='type-id-1'/>
+    <type-decl name='float' size-in-bits='32' id='type-id-2'/>
+    <array-type-def dimensions='1' type-id='type-id-2' size-in-bits='256' id='type-id-3'>
+      <subrange length='8' id='type-id-4'/>
+    </array-type-def>
+    <array-type-def dimensions='0' type-id='type-id-2' size-in-bits='infinite' id='type-id-5'/>
+    <type-decl name='int' size-in-bits='32' id='type-id-6'/>
+    <type-decl name='long double' size-in-bits='128' id='type-id-7'/>
+    <type-decl name='void' id='type-id-8'/>
+    <typedef-decl name='__m256' type-id='type-id-3' filepath='/usr/lib/gcc/x86_64-linux-gnu/7/include/avxintrin.h' line='55' column='1' id='type-id-9'/>
+    <typedef-decl name='structparm' type-id='type-id-10' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.h' line='7' column='1' id='type-id-11'/>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' naming-typedef-id='type-id-11' visibility='default' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.h' line='4' column='1' id='type-id-10'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='a' type-id='type-id-6' visibility='default' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.h' line='5' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='b' type-id='type-id-6' visibility='default' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.h' line='5' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='d' type-id='type-id-1' visibility='default' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.h' line='6' column='1'/>
+      </data-member>
+    </class-decl>
+    <function-decl name='getm512' mangled-name='getm512' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='27' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='getm512'>
+      <return type-id='type-id-5'/>
+    </function-decl>
+    <function-decl name='getm256' mangled-name='getm256' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='26' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='getm256'>
+      <return type-id='type-id-9'/>
+    </function-decl>
+    <function-decl name='getstructparm' mangled-name='getstructparm' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='24' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='getstructparm'>
+      <return type-id='type-id-11'/>
+    </function-decl>
+    <function-decl name='getlongdouble' mangled-name='getlongdouble' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='23' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='getlongdouble'>
+      <return type-id='type-id-7'/>
+    </function-decl>
+    <function-decl name='getdouble' mangled-name='getdouble' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='22' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='getdouble'>
+      <return type-id='type-id-1'/>
+    </function-decl>
+    <function-decl name='getint' mangled-name='getint' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='21' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='getint'>
+      <return type-id='type-id-6'/>
+    </function-decl>
+    <function-decl name='func' mangled-name='func' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='3' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='func'>
+      <parameter type-id='type-id-6' name='e' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='3' column='1'/>
+      <parameter type-id='type-id-6' name='f' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='3' column='1'/>
+      <parameter type-id='type-id-11' name='s' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='3' column='1'/>
+      <parameter type-id='type-id-6' name='g' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='3' column='1'/>
+      <parameter type-id='type-id-6' name='h' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='3' column='1'/>
+      <parameter type-id='type-id-7' name='ld' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='3' column='1'/>
+      <parameter type-id='type-id-1' name='m' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='4' column='1'/>
+      <parameter type-id='type-id-9' name='y' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='4' column='1'/>
+      <parameter type-id='type-id-5' name='z' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='4' column='1'/>
+      <parameter type-id='type-id-1' name='n' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='4' column='1'/>
+      <parameter type-id='type-id-6' name='i' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='4' column='1'/>
+      <parameter type-id='type-id-6' name='j' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='4' column='1'/>
+      <parameter type-id='type-id-6' name='k' filepath='/tmp/root/spack-stage/spack-stage-tim-main-mirdprou44kb4m7f5xskjlpkls4zubbh/spack-src/foo.c' line='4' column='1'/>
+      <return type-id='type-id-8'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>
