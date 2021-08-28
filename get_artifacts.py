@@ -6,6 +6,7 @@ import json
 import fnmatch
 import hashlib
 import tempfile
+import time
 import shutil
 import requests
 import pathlib
@@ -132,6 +133,10 @@ def get_artifacts(repository):
     while True:
         params = {"per_page": 100, "page": page}
         response = requests.get(ARTIFACTS_URL, params=params, headers=HEADERS)
+        while response.status_code == 403:
+            print("API rate limit likely exceeded, sleeping for 10 minutes.")
+            time.sleep(600)
+            response = requests.get(ARTIFACTS_URL, params=params, headers=HEADERS)
         if response.status_code != 200:
             abort_if_fail(response, "Unable to retrieve artifacts")
         response = response.json()
