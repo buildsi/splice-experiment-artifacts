@@ -117,12 +117,16 @@ HEADERS = {
     % API_VERSION,
 }
 
+# used to calculate if something is too old to parse
+today = datetime.now()
+
+
 # URLs
 REPO_URL = "%s/repos/%s" % (BASE, get_envar("INPUT_REPOSITORY"))
 ARTIFACTS_URL = "%s/actions/artifacts" % REPO_URL
 
 
-def get_artifacts(repository):
+def get_artifacts(repository, days=2):
     """
     Retrieve artifacts for a repository.
     """
@@ -133,6 +137,7 @@ def get_artifacts(repository):
     while True:
         params = {"per_page": 100, "page": page}
         response = requests.get(ARTIFACTS_URL, params=params, headers=HEADERS)
+        print("Retrieving page %s for %s" % (page, ARTIFACTS_URL))
         while response.status_code == 403:
             print("API rate limit likely exceeded, sleeping for 10 minutes.")
             time.sleep(600)
@@ -140,13 +145,35 @@ def get_artifacts(repository):
         if response.status_code != 200:
             abort_if_fail(response, "Unable to retrieve artifacts")
         response = response.json()
-        results += response["artifacts"]
+
+        # We must break if found results > days old, otherwise we will continue
+        # and use up our API key!
+        artifacts = response["artifacts"]
+        if any([older_than(x, days) for x in artifacts]):
+            print("Results are older than %s days, stopping query." % days)
+            # but still add the last set since we have them
+            results += artifacts
+            break
+
+        results += artifacts
         # We are on the last page
         if response["total_count"] < 100:
             break
         page += 1
 
     return results
+
+
+def older_than(artifact, days=2):
+    """Determine if an artifact is older than days, return True/False"""
+    start_date = today - timedelta(days=days)
+    created_at = artifact["created_at"]
+    created_timestamp = datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ")
+    diff = created_timestamp - start_date
+    # If the difference in days is negative, it was created before the start date
+    if diff.days < 0:
+        return True
+    return False
 
 
 def recursive_find(base, pattern="*"):
@@ -162,12 +189,6 @@ def download_artifacts(artifacts, output, days):
     if not os.path.exists(output):
         os.makedirs(output)
 
-    # If we are only checking a number of days back
-    if days:
-        days = int(days)
-        today = datetime.now()
-        start_date = today - timedelta(days=days)
-
     for artifact in artifacts:
         if artifact["expired"]:
             print(
@@ -176,13 +197,9 @@ def download_artifacts(artifacts, output, days):
             )
             continue
 
-        # Is it within our number of days to check?
+        # Is it within our number of days to check (a few might sneak through)
         if days:
-            created_at = artifact["created_at"]
-            created_timestamp = datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ")
-            diff = created_timestamp - start_date
-            # If the difference in days is negative, it was created before the start date
-            if diff.days < 0:
+            if older_than(artifact, days):
                 print(
                     "Artifact %s was created %s, more than %s days ago."
                     % (artifact["name"], artifact["created_at"], days)
@@ -252,11 +269,11 @@ def main():
     )
     output = os.environ.get("INPUT_OUTPUT", os.path.join(here, "artifacts"))
 
-    # Number of days to go back
-    days = os.environ.get("INPUT_DAYS")
+    # Number of days to go back (stick to max otherwise cannot run)
+    days = int(os.environ.get("INPUT_DAYS", 2))
 
     # Retrieve artifacts
-    artifacts = get_artifacts(repository)
+    artifacts = get_artifacts(repository, days)
 
     # Download artifacts to output directory
     download_artifacts(artifacts, output, days)
