@@ -39,7 +39,8 @@ def get_envar(name):
 
 
 def abort_if_fail(response, reason):
-    """If PASS_ON_ERROR, don't exit. Otherwise exit with an error and print
+    """
+    If PASS_ON_ERROR, don't exit. Otherwise exit with an error and print
     the reason.
 
     Parameters:
@@ -60,7 +61,8 @@ def abort_if_fail(response, reason):
 
 
 def set_env(name, value):
-    """helper function to echo a key/value pair to the environement file
+    """
+    Helper function to echo a key/value pair to the environement file
 
     Parameters:
     name (str)  : the name of the environment variable
@@ -134,6 +136,7 @@ def get_artifacts(repository, days=2):
 
     results = []
     page = 1
+
     while True:
         params = {"per_page": 100, "page": page}
         response = requests.get(ARTIFACTS_URL, params=params, headers=HEADERS)
@@ -165,7 +168,9 @@ def get_artifacts(repository, days=2):
 
 
 def older_than(artifact, days=2):
-    """Determine if an artifact is older than days, return True/False"""
+    """
+    Determine if an artifact is older than days, return True/False
+    """
     start_date = today - timedelta(days=days)
     created_at = artifact["created_at"]
     created_timestamp = datetime.strptime(created_at, "%Y-%m-%dT%H:%M:%SZ")
@@ -188,6 +193,12 @@ def download_artifacts(artifacts, output, days):
     """
     if not os.path.exists(output):
         os.makedirs(output)
+
+    # Make cache output and results output
+    for subpath in ["cache", "results"]:
+        path = os.path.join(output, subpath)
+        if not os.path.exists(path):
+            os.makedirs(path)
 
     for artifact in artifacts:
         if artifact["expired"]:
@@ -215,10 +226,14 @@ def download_artifacts(artifacts, output, days):
         zipfile = ZipFile(BytesIO(response.content))
         res = zipfile.extractall(tmp)
 
+        save_to = os.path.join(output, "results")
+        if artifact["name"].startswith("cache"):
+            save_to = os.path.join(output, "cache")
+
         # Loop through files, add those that aren't present
         for filename in recursive_find(tmp):
             relpath = filename.replace(tmp, "").strip(os.sep)
-            finalpath = os.path.join(output, relpath)
+            finalpath = os.path.join(save_to, relpath)
 
             # If the file doesn't have size, don't add
             size = get_size(filename)
