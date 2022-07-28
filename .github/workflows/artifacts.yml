@@ -18,7 +18,7 @@ jobs:
       - name: Get Artifacts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          INPUT_REPOSITORY: "buildsi/build-abi-containers"          
+          INPUT_REPOSITORY: "buildsi/splice-experiment-runs" 
 
           # Check for the last 2 days
           INPUT_DAYS: 2
