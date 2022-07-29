@@ -12,3 +12,10 @@ Now I'm back to GitHub because HPC never seems to work :) The process of retriev
 
 This creates a nice structured tree of results, where the namespace is nicely organized
 by tester, tester version, package version, and result types within the tester.
+
+## Usage
+
+```
+export GITHUB_TOKEN=xxxxxxxxxxx
+export INPUT_REPOSITORY=buildsi/splice-experiment-runs
+```

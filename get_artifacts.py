@@ -163,6 +163,7 @@ def get_artifacts(repository, days=2):
         if response["total_count"] < 100:
             break
         page += 1
+        break
 
     return results
 
