@@ -1,0 +1,970 @@
+[
+    {
+        "specs": {
+            "original": "bolt@main%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^argobots@1.1%gcc@11.2.0~affinity~debug+perf~stackunwind~tool~valgrind stackguard=none arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.69%gcc@11.2.0 patches=35c4492,7793209,a49dd5b arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "bolt@main%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^argobots@1.1%gcc@11.2.0~affinity~debug+perf~stackunwind~tool~valgrind stackguard=none arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.69%gcc@11.2.0 patches=35c4492,7793209,a49dd5b arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.6%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/6t47xf",
+            "spliced": "/3mntym"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libomp.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libgomp.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libbolt.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libiomp5.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.6-vn27vmkeu3lfh4d765fwdwtc5bhoxk7w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-42a5lxye7jpanirw2wcrota2jk2ydxnd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-yfemxassgilygodt37hw5cg7hsmpcsjb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-rwhvxlqco25yczns3wa4zxfavbpt7osd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "smeagle": [
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libomp.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.02775740623474121
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libgomp.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.023786306381225586
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libbolt.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.022264719009399414
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libiomp5.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.02210259437561035
+                }
+            ],
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00030994415283203125
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test t33ujvzndv6xvdqojkw6w3gtsyhraxve\n==> Testing package bolt-main-6t47xfx\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 4.084227561950684,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /6t47xf"
+                },
+                "spliced": {
+                    "message": "==> Spack test kqesrtses7dfgyahemcehbanw2ysf7yv\n==> Testing package bolt-main-3mntymn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.8866827487945557,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3mntym"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libgomp.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libiomp5.so": 3116776,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libomp.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libbolt.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0": 1161984
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libomp.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libgomp.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libbolt.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-3mntymnkul3cum6o75pdmtww46ixrhra/lib/libiomp5.so": {
+                "total_matched_symbols": 36
+            }
+        },
+        "experiment": "bolt",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libtool@2.4.6",
+        "package": "bolt@main",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "bolt@main%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^argobots@1.1%gcc@11.2.0~affinity~debug+perf~stackunwind~tool~valgrind stackguard=none arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.69%gcc@11.2.0 patches=35c4492,7793209,a49dd5b arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "bolt@main%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^argobots@1.1%gcc@11.2.0~affinity~debug+perf~stackunwind~tool~valgrind stackguard=none arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.69%gcc@11.2.0 patches=35c4492,7793209,a49dd5b arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/6t47xf",
+            "spliced": "/s5ihwg"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libbolt.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libgomp.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libomp.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libiomp5.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-42a5lxye7jpanirw2wcrota2jk2ydxnd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-yfemxassgilygodt37hw5cg7hsmpcsjb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-rwhvxlqco25yczns3wa4zxfavbpt7osd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "smeagle": [
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libbolt.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.02644038200378418
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libgomp.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.024515628814697266
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libomp.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.0235135555267334
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libiomp5.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.023493528366088867
+                }
+            ],
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0003075599670410156
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test t33ujvzndv6xvdqojkw6w3gtsyhraxve\n==> Testing package bolt-main-6t47xfx\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.9094815254211426,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /6t47xf"
+                },
+                "spliced": {
+                    "message": "==> Spack test wn4ohpqdh64otmzz4izeq23fgaxunkal\n==> Testing package bolt-main-s5ihwgp\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.8980817794799805,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /s5ihwg"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libgomp.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so": 3116776,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libbolt.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libiomp5.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libomp.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0": 1161984
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libbolt.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libgomp.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libomp.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-s5ihwgp3hjqe477wt37gzb3nyrvfxvci/lib/libiomp5.so": {
+                "total_matched_symbols": 36
+            }
+        },
+        "experiment": "bolt",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libtool@2.4.7",
+        "package": "bolt@main",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "bolt@main%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^argobots@1.1%gcc@11.2.0~affinity~debug+perf~stackunwind~tool~valgrind stackguard=none arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.69%gcc@11.2.0 patches=35c4492,7793209,a49dd5b arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "bolt@main%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^argobots@1.1%gcc@11.2.0~affinity~debug+perf~stackunwind~tool~valgrind stackguard=none arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.69%gcc@11.2.0 patches=35c4492,7793209,a49dd5b arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^help2man@1.47.16%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@develop%gcc@11.2.0 patches=055fdac arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^texinfo@6.5%gcc@11.2.0 patches=12f6edb,1732115 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/6t47xf",
+            "spliced": "/zm4qcy"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libomp.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libiomp5.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libbolt.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libgomp.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/texinfo-6.5-v6cisunnveg4dgibfncf4e7ymspe2p6d/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-develop-wjkunnhqqw3ddhkrhxzmbnmn6fwo4ilh/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-42a5lxye7jpanirw2wcrota2jk2ydxnd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-yfemxassgilygodt37hw5cg7hsmpcsjb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-ynibjdwuvqujcahe622fne2tzhbvlg3m/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "smeagle": [
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libomp.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.02724623680114746
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libiomp5.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.023230552673339844
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libbolt.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.022792577743530273
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libgomp.so.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "ABT_barrier_wait",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_free",
+                                "((%rdi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "(%rdi)",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_barrier_reinit",
+                                "%rsi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "%rdi",
+                                "Integer32"
+                            ],
+                            [
+                                "ABT_barrier_create",
+                                "((%rsi))",
+                                "Empty"
+                            ],
+                            [
+                                "ABT_thread_attr_set_stacksize",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "ABT_sched_has_to_stop",
+                                "None",
+                                "Array"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.023101329803466797
+                }
+            ],
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002918243408203125
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test t33ujvzndv6xvdqojkw6w3gtsyhraxve\n==> Testing package bolt-main-6t47xfx\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.8857235908508301,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /6t47xf"
+                },
+                "spliced": {
+                    "message": "==> Spack test yufvi3gnecuu7whzo3ap62e4um4hess5\n==> Testing package bolt-main-zm4qcyu\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.9039185047149658,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /zm4qcy"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-6t47xfxd66462c2obwydwuuw4oqphfoe/lib/libbolt.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libiomp5.so": 3116776,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libbolt.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libomp.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libgomp.so": 3116776,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/argobots-1.1-vurlvavxatjowfksshfv52nsobppaxn4/lib/libabt.so.1.1.0": 1161984
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libomp.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libiomp5.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libbolt.so": {
+                "total_matched_symbols": 36
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bolt-main-zm4qcyuqqjctns4ps4n7aq5akggier3x/lib/libgomp.so": {
+                "total_matched_symbols": 36
+            }
+        },
+        "experiment": "bolt",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libtool@develop",
+        "package": "bolt@main",
+        "different_libs": false
+    }
+]

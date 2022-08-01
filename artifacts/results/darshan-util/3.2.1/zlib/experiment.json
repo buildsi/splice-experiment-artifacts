@@ -1,0 +1,404 @@
+[
+    {
+        "specs": {
+            "original": "darshan-util@3.2.1%gcc@11.2.0~apmpi~apxc~bzip2 patches=d1a0e58 arch=linux-ubuntu22.04-broadwell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-broadwell",
+            "spliced": "darshan-util@3.2.1%gcc@11.2.0~apmpi~apxc~bzip2 patches=d1a0e58 arch=linux-ubuntu22.04-broadwell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-broadwell"
+        },
+        "ids": {
+            "original": "/5fq3ij",
+            "spliced": "/obgakl"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-dxt-parser",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-parser",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-convert",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-merge",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-diff",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-analyzer"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-merge",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-convert",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-parser",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-diff",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-analyzer",
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-dxt-parser"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "smeagle": [
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-merge.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib/libz.so.1.2.12.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "deflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rsi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer8"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.006411075592041016
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-convert.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib/libz.so.1.2.12.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "deflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rsi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer8"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.007130146026611328
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-parser.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib/libz.so.1.2.12.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "deflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rsi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer8"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.00567173957824707
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-diff.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib/libz.so.1.2.12.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "deflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rsi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer8"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.0055484771728515625
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-analyzer.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib/libz.so.1.2.12.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "deflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rsi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer8"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.005541324615478516
+                },
+                {
+                    "A": "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-dxt-parser.json",
+                    "B": [
+                        "/cache/smeagle-spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib/libz.so.1.2.12.json"
+                    ],
+                    "prediction": false,
+                    "message": {
+                        "not_compatible": [
+                            [
+                                "deflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "deflateInit_",
+                                "%rsi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflateInit_",
+                                "%rdi",
+                                "Integer64"
+                            ],
+                            [
+                                "inflate",
+                                "%rdi",
+                                "Integer8"
+                            ]
+                        ]
+                    },
+                    "seconds": 0.005444049835205078
+                }
+            ],
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-dxt-parser",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.000164031982421875
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-parser",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0001239776611328125
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-convert",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00012731552124023438
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-merge",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00012230873107910156
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-diff",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00013303756713867188
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-analyzer",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 9.870529174804688e-05
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test kxsfhfxuyz7fnex5oyyd7gnvqi54f3yl\n==> Testing package darshan-util-3.2.1-5fq3ij5\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.7352511882781982,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /5fq3ij"
+                },
+                "spliced": {
+                    "message": "==> Spack test aeq34uldiy4zmg4pviud45wmibkds7xm\n==> Testing package darshan-util-3.2.1-obgakli\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.7127444744110107,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /obgakl"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-dxt-parser": 393120,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-merge": 394888,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-parser": 454824,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-convert": 393448,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-parser": 454824,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-convert": 393448,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-merge": 394888,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-diff": 403784,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-diff": 403784,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/zlib-1.2.12-k7nmly5fgqmozh6dmuknjvbi4zchoe2p/lib/libz.so.1.2.12": 300608,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-analyzer": 369256,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-dxt-parser": 393120,
+                "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-5fq3ij575w7myhew366ejwz4uv6fjgu2/bin/darshan-analyzer": 369256
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-merge": {
+                "total_matched_symbols": 8
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-convert": {
+                "total_matched_symbols": 8
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-parser": {
+                "total_matched_symbols": 8
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-diff": {
+                "total_matched_symbols": 8
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-analyzer": {
+                "total_matched_symbols": 8
+            },
+            "/spack/opt/spack/linux-ubuntu22.04-broadwell/gcc-11.2.0/darshan-util-3.2.1-obgakli2zjpddytvfocotp3y4ajvwos5/bin/darshan-dxt-parser": {
+                "total_matched_symbols": 8
+            }
+        },
+        "experiment": "darshan-util",
+        "result": "splice-success",
+        "success": true,
+        "splice": "zlib@1.2.12",
+        "package": "darshan-util@3.2.1",
+        "different_libs": false
+    }
+]
