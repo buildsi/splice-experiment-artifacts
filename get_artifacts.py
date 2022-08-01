@@ -196,7 +196,7 @@ def download_artifacts(artifacts, output, days):
         os.makedirs(output)
 
     # Make cache output and results output
-    for subpath in ["cache", "results"]:
+    for subpath in ["results"]:
         path = os.path.join(output, subpath)
         if not os.path.exists(path):
             os.makedirs(path)
@@ -229,7 +229,7 @@ def download_artifacts(artifacts, output, days):
 
         save_to = os.path.join(output, "results")
         if artifact["name"].startswith("cache"):
-            save_to = os.path.join(output, "cache")
+            continue
 
         # Loop through files, add those that aren't present
         for filename in recursive_find(tmp):
