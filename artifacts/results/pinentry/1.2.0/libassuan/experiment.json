@@ -1,0 +1,685 @@
+[
+    {
+        "specs": {
+            "original": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.4.3%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/7qjg22",
+            "spliced": "/ewec6m"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-ewec6meiahn3ex2m3stdk263ict5swpa/bin/pinentry",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-ewec6meiahn3ex2m3stdk263ict5swpa/bin/pinentry-tty"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002903938293457031
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 2.7179718017578125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3",
+                    "command": "missing-previously-found-symbols",
+                    "message": [
+                        "assuan_sock_set_system_hooks"
+                    ],
+                    "prediction": false,
+                    "seconds": 6.508827209472656e-05
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.09026432037353516,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "Functions changes summary: 1 Removed, 0 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'function void assuan_sock_set_system_hooks(assuan_system_hooks_t)'    {assuan_sock_set_system_hooks@@LIBASSUAN_1.0}\n\n",
+                    "return_code": 12,
+                    "seconds": 0.07488679885864258,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": false,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test slpozxlenzjm4zznrbnt5n66ciukqh7u\n==> Testing package pinentry-1.2.0-7qjg22u\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5282940864562988,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /7qjg22"
+                },
+                "spliced": {
+                    "message": "==> Spack test 4bj5xc2s7hw3excfjd2z67rj7yrwzh7p\n==> Testing package pinentry-1.2.0-ewec6me\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5233662128448486,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ewec6m"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.4.3-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-iYqu1.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-7SXbo.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 98.9%\nSource compatibility: 98.9%\nTotal binary compatibility problems: 1, warnings: 0\nTotal source compatibility problems: 1, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.4.3-0.html\n",
+                    "return_code": 0,
+                    "seconds": 1.7037971019744873,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3 pinentry-v1.2.0-libassuan-v2.4.3-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.4.3-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.3-oih2yzdxxlyaxjagzepmexsivagvq5cv/lib/libassuan.so.0.7.3": 455816,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib/libgpg-error.so.0.32.1": 644904,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-ewec6meiahn3ex2m3stdk263ict5swpa/bin/pinentry": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5": 457200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-ewec6meiahn3ex2m3stdk263ict5swpa/bin/pinentry-tty": 207680
+            }
+        },
+        "experiment": "pinentry",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libassuan@2.4.3",
+        "package": "pinentry@1.2.0",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.4.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/7qjg22",
+            "spliced": "/4ntdg2"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-4ntdg2hfyatzjpkg57scz7iioujusgn6/bin/pinentry",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-4ntdg2hfyatzjpkg57scz7iioujusgn6/bin/pinentry-tty"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0001533031463623047
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 2.0742416381835938e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5",
+                    "command": "missing-previously-found-symbols",
+                    "message": [
+                        "assuan_sock_set_system_hooks"
+                    ],
+                    "prediction": false,
+                    "seconds": 6.198883056640625e-05
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.08983325958251953,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "Functions changes summary: 1 Removed, 0 Changed, 0 Added function\nVariables changes summary: 0 Removed, 0 Changed, 0 Added variable\n\n1 Removed function:\n\n  [D] 'function void assuan_sock_set_system_hooks(assuan_system_hooks_t)'    {assuan_sock_set_system_hooks@@LIBASSUAN_1.0}\n\n",
+                    "return_code": 12,
+                    "seconds": 0.0731801986694336,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": false,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test slpozxlenzjm4zznrbnt5n66ciukqh7u\n==> Testing package pinentry-1.2.0-7qjg22u\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5240156650543213,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /7qjg22"
+                },
+                "spliced": {
+                    "message": "==> Spack test kekgru3jyanlwqyqggajza6mvjfpqblc\n==> Testing package pinentry-1.2.0-4ntdg2h\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5249841213226318,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /4ntdg2"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.4.5-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-nWtQW.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-Yfyrc.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 98.9%\nSource compatibility: 98.9%\nTotal binary compatibility problems: 1, warnings: 0\nTotal source compatibility problems: 1, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.4.5-0.html\n",
+                    "return_code": 0,
+                    "seconds": 1.6920750141143799,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5 pinentry-v1.2.0-libassuan-v2.4.5-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.4.5-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib/libgpg-error.so.0.32.1": 644904,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5": 457200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-4ntdg2hfyatzjpkg57scz7iioujusgn6/bin/pinentry": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-4ntdg2hfyatzjpkg57scz7iioujusgn6/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.4.5-twc5k3v4uyg6dx754wi3dm6l5r7pg5ea/lib/libassuan.so.0.7.5": 455968
+            }
+        },
+        "experiment": "pinentry",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libassuan@2.4.5",
+        "package": "pinentry@1.2.0",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.3%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/7qjg22",
+            "spliced": "/xfd3af"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-xfd3afd7rkmp6nlkwar637kz3gyygu36/bin/pinentry-tty",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-xfd3afd7rkmp6nlkwar637kz3gyygu36/bin/pinentry"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0001518726348876953
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 2.002716064453125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 6.341934204101562e-05
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.0902872085571289,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.0730276107788086,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test slpozxlenzjm4zznrbnt5n66ciukqh7u\n==> Testing package pinentry-1.2.0-7qjg22u\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5226802825927734,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /7qjg22"
+                },
+                "spliced": {
+                    "message": "==> Spack test 7pujvmgodwdirb3qktgtkk7c5auaivlo\n==> Testing package pinentry-1.2.0-xfd3afd\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5199832916259766,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /xfd3af"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.5.3-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-ON63P.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-YpeAp.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.5.3-0.html\n",
+                    "return_code": 0,
+                    "seconds": 1.6850075721740723,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3 pinentry-v1.2.0-libassuan-v2.5.3-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.5.3-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-xfd3afd7rkmp6nlkwar637kz3gyygu36/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.3-zxqz764oqyzgfnu4mbnx2kly2f4zfhmz/lib/libassuan.so.0.8.3": 457120,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib/libgpg-error.so.0.32.1": 644904,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5": 457200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-xfd3afd7rkmp6nlkwar637kz3gyygu36/bin/pinentry": 207680
+            }
+        },
+        "experiment": "pinentry",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libassuan@2.5.3",
+        "package": "pinentry@1.2.0",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.4%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/7qjg22",
+            "spliced": "/jg6xyf"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-jg6xyfkucqfxth52mkgwoq3sh7hqqzhh/bin/pinentry-tty",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-jg6xyfkucqfxth52mkgwoq3sh7hqqzhh/bin/pinentry"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00016570091247558594
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 2.0265579223632812e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 5.841255187988281e-05
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.08987903594970703,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.07332491874694824,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test slpozxlenzjm4zznrbnt5n66ciukqh7u\n==> Testing package pinentry-1.2.0-7qjg22u\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5239269733428955,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /7qjg22"
+                },
+                "spliced": {
+                    "message": "==> Spack test knafdqwx5ygo6pxohcilazwfuvpzzpyl\n==> Testing package pinentry-1.2.0-jg6xyfk\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5247476100921631,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /jg6xyf"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.5.4-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-KLucy.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-vqg9O.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.5.4-0.html\n",
+                    "return_code": 0,
+                    "seconds": 1.73172926902771,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4 pinentry-v1.2.0-libassuan-v2.5.4-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5-abi-laboratory-pinentry-v1.2.0-libassuan-v2.5.4-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib/libgpg-error.so.0.32.1": 644904,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5": 457200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.4-6kfonv3iopl3axyl6iifx6zkexy3rnl6/lib/libassuan.so.0.8.4": 457168,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-jg6xyfkucqfxth52mkgwoq3sh7hqqzhh/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-jg6xyfkucqfxth52mkgwoq3sh7hqqzhh/bin/pinentry": 207680
+            }
+        },
+        "experiment": "pinentry",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libassuan@2.5.4",
+        "package": "pinentry@1.2.0",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "pinentry@1.2.0%gcc@11.2.0 gui=tty arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf-archive@2022.02.11%gcc@11.2.0 patches=130cd48 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gawk@5.1.1%gcc@11.2.0~nls arch=linux-ubuntu22.04-x86_64_v4 ^gmp@6.2.1%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libassuan@2.5.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libgpg-error@1.43%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^mpfr@4.0.2%gcc@11.2.0 libs=shared,static patches=3f80b83 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/7qjg22",
+            "spliced": "/etegss"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-etegssibljllv6v4fuvyeyu7tpcadkoj/bin/pinentry-tty",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-etegssibljllv6v4fuvyeyu7tpcadkoj/bin/pinentry"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gawk-5.1.1-lnehisyh65xswoibd6wgw24bhdh2wbmd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/mpfr-4.0.2-nney6v7gbvoj6pr5kxizedbklpuygaxt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gmp-6.2.1-nep2kwqwe2tcbrsq36dkypzrc7d74d3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0001506805419921875
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test slpozxlenzjm4zznrbnt5n66ciukqh7u\n==> Testing package pinentry-1.2.0-7qjg22u\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5267472267150879,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /7qjg22"
+                },
+                "spliced": {
+                    "message": "==> Spack test i4g7t4jjsewlhgpl3fhpv5ynhhnccv5i\n==> Testing package pinentry-1.2.0-etegssi\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5286045074462891,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /etegss"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libgpg-error-1.43-xkivr3jzbozh4fldstuenja3ntdxqoke/lib/libgpg-error.so.0.32.1": 644904,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-etegssibljllv6v4fuvyeyu7tpcadkoj/bin/pinentry-tty": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libassuan-2.5.5-tpgowzpu6qz5jgp2owqrypdlhpo2gwga/lib/libassuan.so.0.8.5": 457200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-etegssibljllv6v4fuvyeyu7tpcadkoj/bin/pinentry": 207680,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pinentry-1.2.0-7qjg22udpiu7tpkrztxu2tun6wkx4rky/bin/pinentry-tty": 207680
+            }
+        },
+        "experiment": "pinentry",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libassuan@2.5.5",
+        "package": "pinentry@1.2.0",
+        "different_libs": false
+    }
+]

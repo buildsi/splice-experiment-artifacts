@@ -1,0 +1,981 @@
+[
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.2.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/42pth2"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-42pth2mzjp3jg6vrqnclajsekbgkgqmv/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-42pth2mzjp3jg6vrqnclajsekbgkgqmv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00019478797912597656
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 1.957770824432373,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test ymirp2o46uorxgwo6wsf37fcxmk4hokp\n==> Testing package umpire-0.3.3-42pth2m\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6658616065979004,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /42pth2"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-42pth2mzjp3jg6vrqnclajsekbgkgqmv/lib/libumpire.so": 5028896,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.2.0",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.2.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/gkvssk"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-gkvssknvc4ewvhf3xmtibl6qggd5xb7d/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-gkvssknvc4ewvhf3xmtibl6qggd5xb7d/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00018310546875
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6590282917022705,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test vo7s2jdngjlnshhgcihvcni3oc3ij6gs\n==> Testing package umpire-0.3.3-gkvsskn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6623265743255615,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /gkvssk"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-gkvssknvc4ewvhf3xmtibl6qggd5xb7d/lib/libumpire.so": 5028896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.2.5",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.3.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/73sp3r"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-73sp3racxbcxccx4oy2g5fdwvc6dcucd/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-73sp3racxbcxccx4oy2g5fdwvc6dcucd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.000179290771484375
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6672728061676025,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test nbyqyycitvwfg5ej3rndaxc2sbmeyrdh\n==> Testing package umpire-0.3.3-73sp3ra\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6711125373840332,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /73sp3r"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-73sp3racxbcxccx4oy2g5fdwvc6dcucd/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.3.0",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.3.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/lu3vo2"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lu3vo22uuazc7q3kvrecobmttujj2m34/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lu3vo22uuazc7q3kvrecobmttujj2m34/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0001785755157470703
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6691765785217285,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test g6vropzfxlazclezbg3mrejivoriemon\n==> Testing package umpire-0.3.3-lu3vo22\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6651005744934082,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lu3vo2"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lu3vo22uuazc7q3kvrecobmttujj2m34/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.3.5",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.3.6%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/kehgnc"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-kehgncadpfce3hw5p4ydmvekkoxj4ahr/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-kehgncadpfce3hw5p4ydmvekkoxj4ahr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00017762184143066406
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6647052764892578,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test iw2a72nvnea4hkk7b6o4dl57lmjhtvv7\n==> Testing package umpire-0.3.3-kehgnca\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6633777618408203,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /kehgnc"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-kehgncadpfce3hw5p4ydmvekkoxj4ahr/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.3.6",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.4.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/zh5mwg"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-zh5mwgqjkbdh3vvlwnooekbvttg7nftw/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-zh5mwgqjkbdh3vvlwnooekbvttg7nftw/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0001785755157470703
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6641080379486084,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test dkbblftphytcida4hwmbozurtp3ong2z\n==> Testing package umpire-0.3.3-zh5mwgq\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6638050079345703,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /zh5mwg"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-zh5mwgqjkbdh3vvlwnooekbvttg7nftw/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.4.0",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.4.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/p2srmy"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-p2srmynjkxxs2kdbwsroqob6k62nfy4w/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-p2srmynjkxxs2kdbwsroqob6k62nfy4w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00017499923706054688
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6656150817871094,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test grlnysff5n27dwevxf56wajdb3vqzyqf\n==> Testing package umpire-0.3.3-p2srmyn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6612906455993652,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /p2srmy"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-p2srmynjkxxs2kdbwsroqob6k62nfy4w/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.4.1",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/2afb3r"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-2afb3r3jxnmo6a5fxvgh7752tfrfz7rm/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-2afb3r3jxnmo6a5fxvgh7752tfrfz7rm/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00017595291137695312
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6639037132263184,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test auuidm4pqqn4reclojalbziiofueychh\n==> Testing package umpire-0.3.3-2afb3r3\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6690478324890137,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /2afb3r"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-2afb3r3jxnmo6a5fxvgh7752tfrfz7rm/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.5.0",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/c4m4az"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-c4m4azprwtzz2jkt2t6gkqto4mkai5uz/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-c4m4azprwtzz2jkt2t6gkqto4mkai5uz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00017499923706054688
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6988542079925537,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test qi4iawxjcgf5xwdrph77hemuohztiozm\n==> Testing package umpire-0.3.3-c4m4azp\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6645300388336182,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /c4m4az"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-c4m4azprwtzz2jkt2t6gkqto4mkai5uz/lib/libumpire.so": 5028896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@0.5.1",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@develop%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/46hium"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-46hium5t5ljfxvg6ydez7nwagh3seo5p/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-46hium5t5ljfxvg6ydez7nwagh3seo5p/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00017523765563964844
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6661860942840576,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test snyjcxvckitelpy7uwptjfab4d5keyq7\n==> Testing package umpire-0.3.3-46hium5\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6720294952392578,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /46hium"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-46hium5t5ljfxvg6ydez7nwagh3seo5p/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@develop",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@0.5.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "umpire@0.3.3%gcc@11.2.0+c~cuda~device_alloc~deviceconst+examples~fortran~ipo~numa~openmp~rocm+shared build_type=RelWithDebInfo patches=f3b2133 tests=none arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^blt@main%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/lpitxm",
+            "spliced": "/fi2x7d"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-fi2x7deuq3k4y52sdiyeusg5nnon7y57/lib/libumpire.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-fi2x7deuq3k4y52sdiyeusg5nnon7y57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00017452239990234375
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test cxtdecmrrkc77r2ulp4ne3ikyvzz4v53\n==> Testing package umpire-0.3.3-lpitxmn\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6754937171936035,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lpitxm"
+                },
+                "spliced": {
+                    "message": "==> Spack test vyffx4bw3etqkq7h6qhh6rkohm6wvk46\n==> Testing package umpire-0.3.3-fi2x7de\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6706106662750244,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /fi2x7d"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-fi2x7deuq3k4y52sdiyeusg5nnon7y57/lib/libumpire.so": 5028896,
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/umpire-0.3.3-lpitxmnfqwkodrpgbiecu7zov7v5w7df/lib/libumpire.so": 5028896
+            }
+        },
+        "experiment": "umpire",
+        "result": "splice-success",
+        "success": true,
+        "splice": "blt@main",
+        "package": "umpire@0.3.3",
+        "different_libs": false
+    }
+]
