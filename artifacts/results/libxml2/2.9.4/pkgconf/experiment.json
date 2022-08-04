@@ -1,0 +1,2125 @@
+[
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.3.10%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/lycohv"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/bin/xmllint"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.3.10-g3jpk4nabhqq467fysdy25l6lpmllngi/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00038909912109375
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0001590251922607422
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013931751251220703
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00026226043701171875
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.988380432128906e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.6450881958007812e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013669967651367188
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.506472110748291,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4873805046081543,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4820988178253174,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4998955726623535,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test zviwpzkpdanwzalf7l5lbtmrvmv6wg46\n==> Testing package libxml2-2.9.4-lycohvp\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4944438934326172,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /lycohv"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.3.10-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-SYdDr.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-fPS0b.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.3.10-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.270349502563477,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.3.10-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.3.10-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-lycohvp5twlkjxb6d7dasihw2flcau6x/bin/xmlcatalog": 48192
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.3.10",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/e5anuj"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.3.8-6r55iocxsl7zfx5trxlwtegih4yc7uag/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00038743019104003906
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0001552104949951172
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013829231262207031
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00026988983154296875
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 9.083747863769531e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.4543533325195312e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013608932495117188
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5081310272216797,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4886808395385742,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4816582202911377,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49073290824890137,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test gi3egrvlz5eoenojwkp7jviojwpto5jd\n==> Testing package libxml2-2.9.4-e5anuj4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4925107955932617,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /e5anuj"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.3.8-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-TJ13W.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-i9BeR.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.3.8-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.841448783874512,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.3.8-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.3.8-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-e5anuj4qdv6nzlp3n3w6hrred6ip4nhw/lib/libxml2.so.2": 5530896
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.3.8",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.4.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/ntmgy4"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/bin/xmllint"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.4.0-yr3qjum6w55leeuqfnaa2ujh6yrima3w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00039005279541015625
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0001499652862548828
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013811111450195312
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00026035308837890625
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.702278137207031e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.3589859008789062e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013601064682006836
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5060491561889648,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.48862218856811523,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4851198196411133,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4931812286376953,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test 5mbmorxwai7bqow54b5oqgjbtrb3mmla\n==> Testing package libxml2-2.9.4-ntmgy4g\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49755263328552246,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ntmgy4"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.4.0-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-9HD9j.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-AKTdi.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.4.0-0.html\n",
+                    "return_code": 0,
+                    "seconds": 11.167323350906372,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.4.0-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.4.0-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ntmgy4goe4qwhqdcjg4btepchgni3tue/bin/xmllint": 234200
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.4.0",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/ucl5on"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/bin/xmllint"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.4.2-7rw4vmnbgsqk27rgtpbusmerj2yi5aep/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0003731250762939453
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00015282630920410156
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013892412185668945
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00025725364685058594
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.654594421386719e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.4066696166992188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.01381540298461914
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5171239376068115,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.49606895446777344,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4869418144226074,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49283409118652344,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test wxun6bbj7f3yf447amf4gmoz34lx23mm\n==> Testing package libxml2-2.9.4-ucl5onb\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49504613876342773,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ucl5on"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.4.2-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-lsxHO.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-jP3x6.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.4.2-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.31187629699707,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.4.2-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.4.2-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-ucl5onb6ncjb7735ih7oirucvtcv5f5r/bin/xmllint": 234200
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.4.2",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.5.4%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/6jsa5u"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.5.4-rbcscqqfix36sqr7f5mziua26anzfur5/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.000377655029296875
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00015401840209960938
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013921022415161133
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002567768096923828
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.821487426757812e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.4781951904296875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013658285140991211
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5412633419036865,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.49277830123901367,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4785776138305664,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49364757537841797,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test rjpr2sx7g6crefnotowadlrrvp4kwbg7\n==> Testing package libxml2-2.9.4-6jsa5ue\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49120521545410156,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /6jsa5u"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.5.4-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-TqCcr.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-QatBj.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.5.4-0.html\n",
+                    "return_code": 0,
+                    "seconds": 11.049372911453247,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.5.4-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.5.4-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-6jsa5uemadujcm7v7wh43ueu32mc5upl/lib/libxml2.so.2": 5530896
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.5.4",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.6.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/gdf4vz"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.6.0-hhnziebjoleavjyudmpi3ayesstox4qh/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0003886222839355469
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0001494884490966797
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013939142227172852
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002613067626953125
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 9.083747863769531e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.4066696166992188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013653039932250977
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5172381401062012,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.49103784561157227,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4893486499786377,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4923546314239502,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test ttefw326t2l5vw2x3tyhdtlll4eml3n7\n==> Testing package libxml2-2.9.4-gdf4vza\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49715447425842285,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /gdf4vz"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.0-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-9H5EU.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-JzbhG.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.0-0.html\n",
+                    "return_code": 0,
+                    "seconds": 11.005974531173706,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.6.0-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.0-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-gdf4vzaafaju4zlaryhwwxdilzpok5fo/lib/libxml2.so.2": 5530896
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.6.0",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.6.1%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/uzsxql"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.6.1-75x5c3xgca6w6ybayrli6xj4v2ggsmth/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00039005279541015625
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.000148773193359375
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013850212097167969
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002598762512207031
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.726119995117188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.430511474609375e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013558149337768555
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5146746635437012,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4933907985687256,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.48291778564453125,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4996662139892578,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test 6zpjxsxbvyddhlzdmxuzuxk6owszr7nq\n==> Testing package libxml2-2.9.4-uzsxqlf\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4953582286834717,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /uzsxql"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.1-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-Urpv1.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-fs9O3.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.1-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.424967527389526,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.6.1-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.1-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-uzsxqlftkdjygqwzx3fcptlk5tkvtsyj/lib/libxml2.so": 5530896
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.6.1",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.6.3%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/yhw36l"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/bin/xmlcatalog"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.6.3-i3xsdgbqflnyr3rl6xpu4ihkrokcxetz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0003783702850341797
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00014925003051757812
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013880729675292969
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002579689025878906
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.511543273925781e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.4543533325195312e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013633966445922852
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5116620063781738,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4887697696685791,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.47521305084228516,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4970526695251465,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test nlxicgtgpat4soeb6sasobg3qrpz5pnm\n==> Testing package libxml2-2.9.4-yhw36lx\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4954538345336914,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /yhw36l"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.3-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-KDvtb.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-Tjqs4.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.3-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.23628544807434,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.6.3-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.6.3-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-yhw36lxsdsmghlgtzxqbugahszs3zrnr/bin/xmllint": 234200
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.6.3",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.7.3%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/4kwhve"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/bin/xmlcatalog"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.7.3-igimslnoexihcjvffadso4ox6ggq4imx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00038886070251464844
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0001494884490966797
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.014278173446655273
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00026702880859375
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 9.059906005859375e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.3828277587890625e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.014062881469726562
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5112614631652832,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.49646782875061035,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.4766106605529785,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4957742691040039,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test 3bwjojyfkdkk2qgddd7ju3n6n6d4tesh\n==> Testing package libxml2-2.9.4-4kwhves\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49782562255859375,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /4kwhve"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.7.3-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-czFnm.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-HC9O8.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.7.3-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.18165135383606,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.7.3-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.7.3-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-4kwhveszyqxd2zqgbjzcqql6wnwem6f2/bin/xmlcatalog": 48192
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.7.3",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.7.4%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/wpgcoz"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.7.4-vochcke44euu2kryarog2p3poog3nvhd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00038933753967285156
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00015211105346679688
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013722658157348633
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00027441978454589844
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.869171142578125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.3828277587890625e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013644695281982422
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5071213245391846,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.49536895751953125,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.47945308685302734,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4952056407928467,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test ozrmx4usgbdcyjv4z63bk6uqmofwee4k\n==> Testing package libxml2-2.9.4-wpgcoz2\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.500781774520874,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /wpgcoz"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.7.4-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-WodV8.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-6utpa.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.7.4-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.208159685134888,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.7.4-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.7.4-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2.9.4": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-wpgcoz2uqrsdjrzruwzzh7xmeggnaiyx/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.7.4",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "libxml2@2.9.4%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/3x32nd",
+            "spliced": "/qn4kfy"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/bin/xmlcatalog",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/bin/xmllint",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2.9.4"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00038814544677734375
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00014710426330566406
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013721942901611328
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002677440643310547
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.654594421386719e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.4066696166992188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.013567686080932617
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.5060758590698242,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.48723483085632324,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.471937894821167,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test lfjyqiizjeoqqb6gwvqqip2lwl2fd7j5\n==> Testing package libxml2-2.9.4-3x32nd4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49721455574035645,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /3x32nd"
+                },
+                "spliced": {
+                    "message": "==> Spack test fxxtxlsuqzfxdekamaqbrsg7bxidoj57\n==> Testing package libxml2-2.9.4-qn4kfy7\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.4958794116973877,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /qn4kfy"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.8.0-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-Stz6h.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-phSqn.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.8.0-0.html\n",
+                    "return_code": 0,
+                    "seconds": 10.199281454086304,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2 libxml2-v2.9.4-pkgconf-v1.8.0-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4-abi-laboratory-libxml2-v2.9.4-pkgconf-v1.8.0-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so": 5530896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/bin/xmlcatalog": 48192,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib/liblzma.so.5.2.5": 766752,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-qn4kfy7rivjqgu3cnttteym37z56ex7r/lib/libxml2.so.2.9.4": 5530896,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib/libiconv.so.2.6.1": 1547672,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/bin/xmllint": 234200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.4-3x32nd4icyjtv3qbgafphwzvgy2noama/lib/libxml2.so.2.9.4": 5530896
+            }
+        },
+        "experiment": "libxml2",
+        "result": "splice-success",
+        "success": true,
+        "splice": "pkgconf@1.8.0",
+        "package": "libxml2@2.9.4",
+        "different_libs": false
+    }
+]

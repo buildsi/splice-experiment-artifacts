@@ -1,0 +1,1027 @@
+[
+    {
+        "specs": {
+            "original": "dssp@2.3.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^boost@1.79.0%gcc@11.2.0+atomic+chrono~clanglibcpp~container~context~contract~coroutine+date_time~debug+exception~fiber+filesystem+graph~graph_parallel~icu+iostreams~json+locale+log+math~mpi+multithreaded~nowide~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded~stacktrace+system~taggedlayout+test+thread+timer~type_erasure~versionedlayout+wave cxxstd=98 patches=a440f96 visibility=hidden arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "dssp@2.3.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^boost@1.79.0%gcc@11.2.0+atomic+chrono~clanglibcpp~container~context~contract~coroutine+date_time~debug+exception~fiber+filesystem+graph~graph_parallel~icu+iostreams~json+locale+log+math~mpi+multithreaded~nowide~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded~stacktrace+system~taggedlayout+test+thread+timer~type_erasure~versionedlayout+wave cxxstd=98 patches=a440f96 visibility=hidden arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.6%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/embmfz",
+            "spliced": "/525jix"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-525jix6k6yce2rkiy4fpmqk2k6mu5j2m/bin/test_readpdb",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-525jix6k6yce2rkiy4fpmqk2k6mu5j2m/bin/mkdssp"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.6-vn27vmkeu3lfh4d765fwdwtc5bhoxk7w/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-42a5lxye7jpanirw2wcrota2jk2ydxnd/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0006098747253417969
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 7.176399230957031e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0007419586181640625
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 6.318092346191406e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0002532005310058594
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 5.817413330078125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00015854835510253906
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0004611015319824219
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 4.57763671875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0016808509826660156
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 5.841255187988281e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00012159347534179688
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 5.387498378753662,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 2.0868515968322754,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 3.3186051845550537,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.319122314453125,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 4.141452789306641,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 1.1067304611206055,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 7.931394338607788,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 5.295897722244263,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 3.417421579360962,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test 45zyd46gyho26kpbpqrudyvzar5bsbfx\n==> Testing package dssp-2.3.0-embmfzd\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.7053322792053223,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /embmfz"
+                },
+                "spliced": {
+                    "message": "==> Spack test vcq5ljd2oykftmbgpmvleo6qc4ilo3xl\n==> Testing package dssp-2.3.0-525jix6\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6251382827758789,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /525jix"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-ZAFnz.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-TAh1U.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-0.html\n",
+                    "return_code": 0,
+                    "seconds": 14.727866411209106,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0 dssp-v2.3.0-libtool-v2.4.6-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-1.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-FJkcN.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-CC247.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-1.html\n",
+                    "return_code": 0,
+                    "seconds": 1.9465460777282715,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0 dssp-v2.3.0-libtool-v2.4.6-1 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-1.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-2.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-QvhEG.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-17PUW.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-2.html\n",
+                    "return_code": 0,
+                    "seconds": 5.0911829471588135,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0 dssp-v2.3.0-libtool-v2.4.6-2 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-2.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-3.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-dbwb0.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-yep5Z.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-3.html\n",
+                    "return_code": 0,
+                    "seconds": 34.504645347595215,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0 dssp-v2.3.0-libtool-v2.4.6-3 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.6-3.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0": 8538928,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0": 13347168,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0": 8538928,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0": 746384,
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0": 13347168,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0": 746384,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-525jix6k6yce2rkiy4fpmqk2k6mu5j2m/bin/test_readpdb": 7176896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0": 1957440,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-525jix6k6yce2rkiy4fpmqk2k6mu5j2m/bin/mkdssp": 10333784,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp": 10333784,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0": 1957440,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb": 7176896
+            }
+        },
+        "experiment": "dssp",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libtool@2.4.6",
+        "package": "dssp@2.3.0",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "dssp@2.3.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^boost@1.79.0%gcc@11.2.0+atomic+chrono~clanglibcpp~container~context~contract~coroutine+date_time~debug+exception~fiber+filesystem+graph~graph_parallel~icu+iostreams~json+locale+log+math~mpi+multithreaded~nowide~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded~stacktrace+system~taggedlayout+test+thread+timer~type_erasure~versionedlayout+wave cxxstd=98 patches=a440f96 visibility=hidden arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "dssp@2.3.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^boost@1.79.0%gcc@11.2.0+atomic+chrono~clanglibcpp~container~context~contract~coroutine+date_time~debug+exception~fiber+filesystem+graph~graph_parallel~icu+iostreams~json+locale+log+math~mpi+multithreaded~nowide~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded~stacktrace+system~taggedlayout+test+thread+timer~type_erasure~versionedlayout+wave cxxstd=98 patches=a440f96 visibility=hidden arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/embmfz",
+            "spliced": "/bfpliz"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-bfplizradkt5amfvl7lillmgogxbjnrm/bin/mkdssp",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-bfplizradkt5amfvl7lillmgogxbjnrm/bin/test_readpdb"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-42a5lxye7jpanirw2wcrota2jk2ydxnd/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0006113052368164062
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 6.4849853515625e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0007188320159912109
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 6.508827209472656e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0002484321594238281
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 5.626678466796875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0001456737518310547
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00045013427734375
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 4.38690185546875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0016384124755859375
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 4.9591064453125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00011920928955078125
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 5.298570394515991,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 2.047116756439209,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 3.263073205947876,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.31177306175231934,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 4.123205661773682,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 1.0663871765136719,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 7.821226119995117,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 5.340853929519653,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 3.4522013664245605,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test 45zyd46gyho26kpbpqrudyvzar5bsbfx\n==> Testing package dssp-2.3.0-embmfzd\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6274003982543945,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /embmfz"
+                },
+                "spliced": {
+                    "message": "==> Spack test kabwt5vaica264rtg4qr235jxshytlwe\n==> Testing package dssp-2.3.0-bfplizr\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6246063709259033,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /bfpliz"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-BfEVn.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-HgZoW.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-0.html\n",
+                    "return_code": 0,
+                    "seconds": 15.138046979904175,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0 dssp-v2.3.0-libtool-v2.4.7-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-1.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-0UgOe.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-9sbtc.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-1.html\n",
+                    "return_code": 0,
+                    "seconds": 2.0025458335876465,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0 dssp-v2.3.0-libtool-v2.4.7-1 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-1.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-2.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-sVs4z.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-5blFp.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-2.html\n",
+                    "return_code": 0,
+                    "seconds": 5.09931492805481,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0 dssp-v2.3.0-libtool-v2.4.7-2 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-2.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-3.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-KWoIc.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-LsdVQ.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-3.html\n",
+                    "return_code": 0,
+                    "seconds": 34.03140163421631,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0 dssp-v2.3.0-libtool-v2.4.7-3 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-v2.4.7-3.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0": 8538928,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0": 13347168,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_program_options.so.1.79.0": 8538928,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0": 746384,
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_iostreams.so.1.79.0": 746384,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_unit_test_framework.so.1.79.0": 13347168,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0": 1957440,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-bfplizradkt5amfvl7lillmgogxbjnrm/bin/mkdssp": 10333784,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp": 10333784,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-3c6du5sjfk4sy4mrc2yoyqkovdczp2fr/lib/libboost_thread.so.1.79.0": 1957440,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-bfplizradkt5amfvl7lillmgogxbjnrm/bin/test_readpdb": 7176896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb": 7176896
+            }
+        },
+        "experiment": "dssp",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libtool@2.4.7",
+        "package": "dssp@2.3.0",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "dssp@2.3.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^boost@1.79.0%gcc@11.2.0+atomic+chrono~clanglibcpp~container~context~contract~coroutine+date_time~debug+exception~fiber+filesystem+graph~graph_parallel~icu+iostreams~json+locale+log+math~mpi+multithreaded~nowide~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded~stacktrace+system~taggedlayout+test+thread+timer~type_erasure~versionedlayout+wave cxxstd=98 patches=a440f96 visibility=hidden arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@2.4.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "dssp@2.3.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^autoconf@2.71%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^automake@1.16.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^boost@1.79.0%gcc@11.2.0+atomic+chrono~clanglibcpp~container~context~contract~coroutine+date_time~debug+exception~fiber+filesystem+graph~graph_parallel~icu+iostreams~json+locale+log+math~mpi+multithreaded~nowide~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded~stacktrace+system~taggedlayout+test+thread+timer~type_erasure~versionedlayout+wave cxxstd=98 patches=a440f96 visibility=hidden arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^help2man@1.47.16%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libtool@develop%gcc@11.2.0 patches=055fdac arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^texinfo@6.5%gcc@11.2.0 patches=12f6edb,1732115 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/embmfz",
+            "spliced": "/aetum6"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-aetum6qv2mffbaoajxd7crpctwa5bfew/bin/mkdssp",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-aetum6qv2mffbaoajxd7crpctwa5bfew/bin/test_readpdb"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-2.4.7-wiaidgsqbqofkcpwnzweqajx4qevtgs4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/texinfo-6.5-mji5jftenoi47n6vkezqmax6lq5s2rmg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libtool-develop-zdqnhv6zexxd65psuyw4jmjp2nonkury/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0005910396575927734
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 6.437301635742188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0006568431854248047
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 6.246566772460938e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00021982192993164062
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 5.626678466796875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00013399124145507812
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00043892860412597656
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 4.267692565917969e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0015420913696289062
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 4.482269287109375e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.00011539459228515625
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 5.35579776763916,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 2.057965040206909,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 3.3602490425109863,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.3251378536224365,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 4.230622291564941,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 1.156280279159546,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 8.399749994277954,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 5.192026615142822,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 3.3685758113861084,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test 45zyd46gyho26kpbpqrudyvzar5bsbfx\n==> Testing package dssp-2.3.0-embmfzd\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6030464172363281,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /embmfz"
+                },
+                "spliced": {
+                    "message": "==> Spack test gmz7tmhnl525myzexja7eakezirlq3ag\n==> Testing package dssp-2.3.0-aetum6q\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6528587341308594,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /aetum6"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-LHT2m.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-KItUA.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-0.html\n",
+                    "return_code": 0,
+                    "seconds": 13.995471715927124,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0 dssp-v2.3.0-libtool-vdevelop-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-1.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-rNpSK.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-b2Xgp.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-1.html\n",
+                    "return_code": 0,
+                    "seconds": 2.003662347793579,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0 dssp-v2.3.0-libtool-vdevelop-1 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-1.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-2.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-JY94O.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-iR1v0.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-2.html\n",
+                    "return_code": 0,
+                    "seconds": 5.204696178436279,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0 dssp-v2.3.0-libtool-vdevelop-2 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-2.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-3.html\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-GDeg2.dump\nReading debug-info\nWARNING: incompatible build option detected: -O3 (required -Og for better analysis)\nERROR: cannot find 'vtable-dumper'\nReading v-tables\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-dT8wo.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-3.html\n",
+                    "return_code": 0,
+                    "seconds": 34.17553353309631,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0 dssp-v2.3.0-libtool-vdevelop-3 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0-abi-laboratory-dssp-v2.3.0-libtool-vdevelop-3.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_thread.so.1.79.0": 1957440,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_program_options.so.1.79.0": 8538928,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_unit_test_framework.so.1.79.0": 13347168,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_iostreams.so.1.79.0": 746384,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_iostreams.so.1.79.0": 746384,
+                "/lib/x86_64-linux-gnu/libgcc_s.so.1": 125488,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_unit_test_framework.so.1.79.0": 13347168,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-2ez6ikogv54gmexscwopxowf5cvom2ym/lib/libboost_thread.so.1.79.0": 1957440,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-aetum6qv2mffbaoajxd7crpctwa5bfew/bin/mkdssp": 10333784,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/boost-1.79.0-5ezotrnwhvh7tkjrkbuq4jwh4tjbb74d/lib/libboost_program_options.so.1.79.0": 8538928,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/mkdssp": 10333784,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-aetum6qv2mffbaoajxd7crpctwa5bfew/bin/test_readpdb": 7176896,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/dssp-2.3.0-embmfzdsxi3hojqb2hqjurzno23zr7n7/bin/test_readpdb": 7176896
+            }
+        },
+        "experiment": "dssp",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libtool@develop",
+        "package": "dssp@2.3.0",
+        "different_libs": false
+    }
+]

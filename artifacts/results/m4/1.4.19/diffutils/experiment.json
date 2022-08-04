@@ -1,0 +1,109 @@
+[
+    {
+        "specs": {},
+        "ids": {},
+        "original": [],
+        "spliced": [],
+        "paths": {},
+        "predictions": {
+            "spack-test": {}
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "m4",
+        "result": "splice-install-failed",
+        "success": false,
+        "splice": "diffutils@3.6",
+        "package": "m4@1.4.19",
+        "different_libs": false
+    },
+    {
+        "specs": {},
+        "ids": {},
+        "original": [],
+        "spliced": [],
+        "paths": {},
+        "predictions": {
+            "spack-test": {}
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "m4",
+        "result": "splice-install-failed",
+        "success": false,
+        "splice": "diffutils@3.7",
+        "package": "m4@1.4.19",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/5uxxps",
+            "spliced": "/pkjz4x"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/m4-1.4.19-5uxxps6h7jehnzynxsafmfw5h3qriq2j/bin/m4"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/m4-1.4.19-pkjz4x4uwfxvc2ggvmwqhayne4i6cor3/bin/m4"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/m4-1.4.19-5uxxps6h7jehnzynxsafmfw5h3qriq2j/bin/m4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00034356117248535156
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test ettvnkxqsz55blkkfv4uoweq3ljrljou\n==> Testing package m4-1.4.19-5uxxps6\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5191061496734619,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /5uxxps"
+                },
+                "spliced": {
+                    "message": "==> Spack test 6ixtxxf3xjbetygcomry3ykwycdqbhaq\n==> Testing package m4-1.4.19-pkjz4x4\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5120823383331299,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /pkjz4x"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/m4-1.4.19-pkjz4x4uwfxvc2ggvmwqhayne4i6cor3/bin/m4": 1235464,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/m4-1.4.19-5uxxps6h7jehnzynxsafmfw5h3qriq2j/bin/m4": 1235464,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304
+            }
+        },
+        "experiment": "m4",
+        "result": "splice-success",
+        "success": true,
+        "splice": "diffutils@3.8",
+        "package": "m4@1.4.19",
+        "different_libs": false
+    }
+]

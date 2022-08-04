@@ -1,0 +1,278 @@
+[
+    {
+        "specs": {
+            "original": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-icelake",
+            "spliced": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.10%gcc@11.2.0 patches=b9f66ed arch=linux-ubuntu22.04-icelake"
+        },
+        "ids": {
+            "original": "/zef7sc",
+            "spliced": "/esqwgw"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-esqwgwugkx2uuiynngq7zxjh6lm2vzp7/bin/m4"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.13-cmvad4ws5rsyi5qqb2ym35mm4jvrv452/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.10-ujkdzxj6a3eu3zysxyl5dqr4d73sits4/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00034618377685546875
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test zloy2mc24edusijrtnsnxgaduscixtra\n==> Testing package m4-1.4.19-zef7sc2\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.38958168029785156,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /zef7sc"
+                },
+                "spliced": {
+                    "message": "==> Spack test 5z46cynqg5vj5nv3brwqlqsnpdueboo7\n==> Testing package m4-1.4.19-esqwgwu\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.3633146286010742,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /esqwgw"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4": 1233768,
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-esqwgwugkx2uuiynngq7zxjh6lm2vzp7/bin/m4": 1233768
+            }
+        },
+        "experiment": "m4",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libsigsegv@2.10",
+        "package": "m4@1.4.19",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-icelake",
+            "spliced": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.11%gcc@11.2.0 arch=linux-ubuntu22.04-icelake"
+        },
+        "ids": {
+            "original": "/zef7sc",
+            "spliced": "/ht4k5u"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-ht4k5uweigs665ed77x7htrsskcbd54u/bin/m4"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.13-cmvad4ws5rsyi5qqb2ym35mm4jvrv452/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.11-z4j24rmfwkipt7lmafefzmwul6ytaphs/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.000186920166015625
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test zloy2mc24edusijrtnsnxgaduscixtra\n==> Testing package m4-1.4.19-zef7sc2\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.35982179641723633,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /zef7sc"
+                },
+                "spliced": {
+                    "message": "==> Spack test 34donqu72gqfrpn752g5q2yqc5nkgr7y\n==> Testing package m4-1.4.19-ht4k5uw\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.38220643997192383,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ht4k5u"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4": 1233768,
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-ht4k5uweigs665ed77x7htrsskcbd54u/bin/m4": 1233768
+            }
+        },
+        "experiment": "m4",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libsigsegv@2.11",
+        "package": "m4@1.4.19",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-icelake",
+            "spliced": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.12%gcc@11.2.0 arch=linux-ubuntu22.04-icelake"
+        },
+        "ids": {
+            "original": "/zef7sc",
+            "spliced": "/b5jsaf"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-b5jsafqmu3piiwb3pw3ajfpblu62ymsb/bin/m4"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.13-cmvad4ws5rsyi5qqb2ym35mm4jvrv452/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.12-qy4ylrktpjl7yfcvtyqtk36d2k7diwha/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00018286705017089844
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test zloy2mc24edusijrtnsnxgaduscixtra\n==> Testing package m4-1.4.19-zef7sc2\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.36344456672668457,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /zef7sc"
+                },
+                "spliced": {
+                    "message": "==> Spack test pltd4ayolcfjxbqfmmopuqaabdtjhyz2\n==> Testing package m4-1.4.19-b5jsafq\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.35762977600097656,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /b5jsaf"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-b5jsafqmu3piiwb3pw3ajfpblu62ymsb/bin/m4": 1233768,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4": 1233768
+            }
+        },
+        "experiment": "m4",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libsigsegv@2.12",
+        "package": "m4@1.4.19",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-icelake",
+            "spliced": "m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-icelake ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-icelake ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-icelake ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-icelake"
+        },
+        "ids": {
+            "original": "/zef7sc",
+            "spliced": "/muexvp"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-muexvpcdyylscxdhdj42xfkrkgyltojs/bin/m4"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.13-cmvad4ws5rsyi5qqb2ym35mm4jvrv452/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libsigsegv-2.13-cmvad4ws5rsyi5qqb2ym35mm4jvrv452/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/libiconv-1.16-r66qu6urpablctua7kxt22g3772hszbf/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00019669532775878906
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test zloy2mc24edusijrtnsnxgaduscixtra\n==> Testing package m4-1.4.19-zef7sc2\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.3598954677581787,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /zef7sc"
+                },
+                "spliced": {
+                    "message": "==> Spack test 2yvtqq5z2q3oc7uvzuqle7qvbz6t3gnq\n==> Testing package m4-1.4.19-muexvpc\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.35839176177978516,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /muexvp"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-zef7sc2o4aohy5ksdo6hqjp6lcnspedt/bin/m4": 1233768,
+                "/spack/opt/spack/linux-ubuntu22.04-icelake/gcc-11.2.0/m4-1.4.19-muexvpcdyylscxdhdj42xfkrkgyltojs/bin/m4": 1233768
+            }
+        },
+        "experiment": "m4",
+        "result": "splice-success",
+        "success": true,
+        "splice": "libsigsegv@2.13",
+        "package": "m4@1.4.19",
+        "different_libs": false
+    }
+]

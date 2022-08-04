@@ -1,0 +1,972 @@
+[
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.10.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/6qi7rz"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-6qi7rze2hq6od6cdqkzoe7pdcniwziz5/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.332831382751465,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test 2qoi65wq3ca4d2xsqruhhrncufv4kass\n==> Testing package meson-0.55.2-6qi7rze\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.623321771621704,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /6qi7rz"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.10.0",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.10.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/zdrcs6"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-zdrcs6sb7sq6c33abzoi32hjaa5p7c5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.187318801879883,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test ixcj6f2urx4w3ot5iaxxmw4kfl37shlx\n==> Testing package meson-0.55.2-zdrcs6s\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.5004918575286865,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /zdrcs6"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.10.1",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.10.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/6oc3o5"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-6oc3o5ezoitdsazqctubkviokioit4ex/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.2301080226898193,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test qiu7ovhuqne76wm7skfqd4cldyp7rhaa\n==> Testing package meson-0.55.2-6oc3o5e\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.546567440032959,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /6oc3o5"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.10.2",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/csq4r4"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-csq4r4lhp7yd2mtmtzy2yljvkchyo7tv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.2232110500335693,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test 4njjdjlgouxafdtmmt25y6nia63gxjqt\n==> Testing package meson-0.55.2-csq4r4l\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.516901969909668,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /csq4r4"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.11.0",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.6.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/muigpk"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-muigpkccob6pdygvqqoalrhgcc2eeizh/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.287055730819702,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test autwyxsiu3jpwtcykb6h3obxc5fd4uut\n==> Testing package meson-0.55.2-muigpkc\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.594611406326294,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /muigpk"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.6.0",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.7.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/tohs5x"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-tohs5xzvdhsyovuodf4yt2vpkn6y42hf/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.3050553798675537,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test a4lponbj7u2rcaeqixcfmy6i6eg4odc2\n==> Testing package meson-0.55.2-tohs5xz\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.5848135948181152,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /tohs5x"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.7.2",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.8.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/vbhuvz"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-vbhuvzx44pjyfnwzzentga7be24k7kzx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.25612211227417,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test ilcw4vxb7swiv7m3hjk6uh7x4wbno6it\n==> Testing package meson-0.55.2-vbhuvzx\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.5557641983032227,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /vbhuvz"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.8.2",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.9.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/bcwioh"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-bcwiohwkhepeooijy6hxuzcdir4gzyr3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.245283603668213,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test cr3wisolzqecdg2tzbhhnkh2nfs3wfxp\n==> Testing package meson-0.55.2-bcwiohw\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.5547268390655518,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /bcwioh"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@1.9.0",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@kitware%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/pmqmzh"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-pmqmzhlnoc5zaca2nzxuxjbmaha6q4ot/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.2670249938964844,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test 6hemctubplesranwbe5hupkmovgtb7ev\n==> Testing package meson-0.55.2-pmqmzhl\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.5728235244750977,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /pmqmzh"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@kitware",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    },
+    {
+        "specs": {
+            "original": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@1.11.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell",
+            "spliced": "meson@0.55.2%gcc@11.2.0 patches=45c35fc arch=linux-ubuntu22.04-haswell ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-haswell ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-haswell ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-haswell ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-haswell ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-haswell ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-haswell ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-haswell ^ninja@master%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-haswell ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-haswell ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-pip@22.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-setuptools@63.0.0%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^py-wheel@0.37.1%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-haswell ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-haswell ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-haswell ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-haswell ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-haswell ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-haswell ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-haswell"
+        },
+        "ids": {
+            "original": "/ne4q4a",
+            "spliced": "/bjgzgy"
+        },
+        "original": [],
+        "spliced": [],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-ne4q4aoxsr5dvb3raleu5ajg43gnjttv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-qjixzrrpenjwdukrncgixplgrivtxn4g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-nd5hxakdl6igvv7tx3olohvdz3mufwbb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-elguqdgx2rqpyjti3aiugzkciub2w7pc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libbsd-0.11.5-ae73lpti6eu6wivubsemtrytzzf3hez7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-setuptools-63.0.0-g475bshoryifohuytt7y3ge2umituppg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/ncurses-6.2-2khyzubbcfupjtbj4nkogd7ebonczczr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/sqlite-3.38.5-d2ea6bj7l73lk6qts76ztojzxfz5mcvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zlib-1.2.12-ychk3ix6mv3mgsrtnazfunnmu4vrspkk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libffi-3.4.2-m3zifbsskipiwtc4j55gcuiggbxrlc73/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/openssl-1.1.1q-gqizvq5o5pipkqv2cxsg3k47lnqi64j3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-pip-22.1.2-3okip5kqbvxn6pwmfjb57eogafl7scz2/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/bzip2-1.0.8-szccym2boautmkfmh4m2xm2krbftkd2g/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/py-wheel-0.37.1-ltvvmuvb2dskp25r2n2vjco6dli2mhng/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libmd-1.0.4-ajqlqlpzseqjzps2pjrcxzqgwoqre7id/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/readline-8.1.2-b7aunqqlalfx6dlbtvcqgzcvtcn4ysjk/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gdbm-1.19-wcroyxphbv36i3i7pvflptbcp2fqumx3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/gettext-0.21-u6wcu25n7tfqtrvnexez66utuydb4smx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/util-linux-uuid-2.37.4-zfqnulivrw2c6ucejn44ozyygbnbgkej/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/xz-5.2.5-ub757pyoqpaurexmrq7oxo7cj35qod2q/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/perl-5.34.1-olweu672du4nrlvjn2shpf62jbgxzzp6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/pkgconf-1.8.0-ruoukh6z67iefyz4cyphkcqaz2g2hx7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libxml2-2.9.13-7nkjcj7tyvlqw2evbz75lmy3orkmqpmy/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/meson-0.55.2-bjgzgy5pgvmjhjfpk5ehinpsw72zhzmq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/libiconv-1.16-nylazfnjil3kyc5wyctes6ttimburge6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/berkeley-db-18.1.40-y3xm2b4wnx2tsoeh4mb3glrv4zzgmt57/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/python-3.9.13-q47iise7npr7iijnfw5l66jtgksi4tvc/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/zstd-1.5.2-nbvfzv7w6wra46fxbdhk5ewgplaxuwqn/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-haswell/gcc-11.2.0/expat-2.4.8-owhc2truzoihyzfqo7rxjgd4edfc6j7v/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test rk66cfixnu23hjobgbil7qco7dgifkxr\n==> Testing package meson-0.55.2-ne4q4ao\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.2913875579833984,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ne4q4a"
+                },
+                "spliced": {
+                    "message": "==> Spack test lebe3dp5a225ate6agikoscerpm4hiva\n==> Testing package meson-0.55.2-bjgzgy5\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 2.578005075454712,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /bjgzgy"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {}
+        },
+        "experiment": "meson",
+        "result": "splice-success",
+        "success": true,
+        "splice": "ninja@master",
+        "package": "meson@0.55.2",
+        "different_libs": false
+    }
+]

@@ -128,7 +128,7 @@ REPO_URL = "%s/repos/%s" % (BASE, get_envar("INPUT_REPOSITORY"))
 ARTIFACTS_URL = "%s/actions/artifacts" % REPO_URL
 
 
-def get_artifacts(repository, days=2):
+def get_artifacts(repository, days=10):
     """
     Retrieve artifacts for a repository.
     """
@@ -160,10 +160,10 @@ def get_artifacts(repository, days=2):
 
         results += artifacts
         # We are on the last page
-        if response["total_count"] < 100:
+        count = len(response['artifacts'])
+        if count == 0:
             break
         page += 1
-        break
 
     return results
 
@@ -286,7 +286,7 @@ def main():
     output = os.environ.get("INPUT_OUTPUT", os.path.join(here, "artifacts"))
 
     # Number of days to go back (stick to max otherwise cannot run)
-    days = int(os.environ.get("INPUT_DAYS", 2))
+    days = int(os.environ.get("INPUT_DAYS", 10))
 
     # Retrieve artifacts
     artifacts = get_artifacts(repository, days)
