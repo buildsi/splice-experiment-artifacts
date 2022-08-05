@@ -1,0 +1,817 @@
+[
+    {
+        "specs": {
+            "original": "perl@5.32.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "perl@5.32.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/v4dcyw",
+            "spliced": "/jbxkjf"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Math/BigInt/FastCalc/FastCalc.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/ODBM_File/ODBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/attributes/attributes.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/File/DosGlob/DosGlob.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/mro/mro.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl5.32.1",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Symbol/Symbol.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/Piece/Piece.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Hostname/Hostname.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Unicode/Unicode.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/MIME/Base64/Base64.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/encoding/encoding.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/List/Util/Util.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/threads.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/scalar/scalar.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/JP/JP.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/File/Glob/Glob.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/TW/TW.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/SDBM_File/SDBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Opcode/Opcode.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Syslog/Syslog.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Fcntl/Fcntl.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/IPC/SysV/SysV.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/B/B.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Socket/Socket.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/FieldHash/FieldHash.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/SHA/SHA.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/mmap/mmap.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/IO/IO.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/HiRes/HiRes.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Filter/Util/Call/Call.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/shared/shared.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/Util.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/CN/CN.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Byte/Byte.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/I18N/Langinfo/Langinfo.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Devel/Peek/Peek.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/POSIX/POSIX.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/EBCDIC/EBCDIC.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Normalize/Normalize.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/re/re.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/via/via.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Bzip2/Bzip2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/NDBM_File/NDBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Collate/Collate.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Encode.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/MD5/MD5.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/GDBM_File/GDBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Storable/Storable.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/KR/KR.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Cwd/Cwd.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Zlib/Zlib.so"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/via/via.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/IPC/SysV/SysV.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/B/B.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/GDBM_File/GDBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Collate/Collate.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/JP/JP.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/mro/mro.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Syslog/Syslog.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Cwd/Cwd.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/File/DosGlob/DosGlob.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/Util.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/mmap/mmap.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/NDBM_File/NDBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Byte/Byte.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/CN/CN.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Storable/Storable.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/HiRes/HiRes.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/shared/shared.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Normalize/Normalize.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/attributes/attributes.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Unicode/Unicode.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Math/BigInt/FastCalc/FastCalc.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/MD5/MD5.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Socket/Socket.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/ODBM_File/ODBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Bzip2/Bzip2.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/Piece/Piece.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Symbol/Symbol.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/POSIX/POSIX.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/bin/perl5.32.1",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/FieldHash/FieldHash.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Encode.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/SDBM_File/SDBM_File.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/File/Glob/Glob.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/KR/KR.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/MIME/Base64/Base64.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/I18N/Langinfo/Langinfo.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/re/re.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/bin/perl",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/SHA/SHA.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/EBCDIC/EBCDIC.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Hostname/Hostname.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/IO/IO.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/threads.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Filter/Util/Call/Call.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Zlib/Zlib.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/scalar/scalar.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/encoding/encoding.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Fcntl/Fcntl.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Opcode/Opcode.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Devel/Peek/Peek.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/List/Util/Util.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/TW/TW.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Math/BigInt/FastCalc/FastCalc.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.8835067749023438e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/ODBM_File/ODBM_File.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 4.2438507080078125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/attributes/attributes.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.821487426757812e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/File/DosGlob/DosGlob.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.6689300537109375e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/mro/mro.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.0967254638671875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0005164146423339844
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl5.32.1",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 6.365776062011719e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl5.32.1",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.8835067749023438e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl5.32.1",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.020878076553344727
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Symbol/Symbol.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.3113021850585938e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/Piece/Piece.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 5.3882598876953125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Hostname/Hostname.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.049041748046875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Unicode/Unicode.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.430511474609375e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/MIME/Base64/Base64.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.0251998901367188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/encoding/encoding.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.239776611328125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/Util.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.0728836059570312e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/threads.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 7.05718994140625e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/scalar/scalar.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.8596649169921875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/JP/JP.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 9.059906005859375e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/File/Glob/Glob.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 5.8650970458984375e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/TW/TW.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 7.3909759521484375e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/SDBM_File/SDBM_File.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 3.981590270996094e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Opcode/Opcode.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.4543533325195312e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Syslog/Syslog.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 2.09808349609375e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Fcntl/Fcntl.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.9073486328125e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/IPC/SysV/SysV.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 2.8848648071289062e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/B/B.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.5497207641601562e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Socket/Socket.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 3.600120544433594e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/FieldHash/FieldHash.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.0728836059570312e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/SHA/SHA.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.5974044799804688e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/mmap/mmap.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 2.574920654296875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/IO/IO.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 2.0742416381835938e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/HiRes/HiRes.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 4.696846008300781e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Filter/Util/Call/Call.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.344650268554688e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/shared/shared.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 4.124641418457031e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 3.0040740966796875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/CN/CN.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.58306884765625e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Byte/Byte.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 7.867813110351562e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/I18N/Langinfo/Langinfo.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.0251998901367188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 6.604194641113281e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 1.33514404296875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.020377397537231445
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Devel/Peek/Peek.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.1444091796875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/POSIX/POSIX.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002818107604980469
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/EBCDIC/EBCDIC.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.344650268554688e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Normalize/Normalize.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.6927719116210938e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/re/re.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 7.2479248046875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/via/via.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.7881393432617188e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Bzip2/Bzip2.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 4.220008850097656e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/NDBM_File/NDBM_File.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 3.886222839355469e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Collate/Collate.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.2636184692382812e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Encode.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.9311904907226562e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/MD5/MD5.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.33514404296875e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/GDBM_File/GDBM_File.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 4.76837158203125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Storable/Storable.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 1.9073486328125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/KR/KR.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.106231689453125e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Cwd/Cwd.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 3.695487976074219e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Zlib/Zlib.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 8.130073547363281e-05
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.9145948886871338,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl5.32.1 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl5.32.1",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.9002454280853271,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.91898512840271,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test 27cxhvzux75ufdu6hdty27dphwpojgjf\n==> Testing package perl-5.32.1-v4dcyw6\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.6727886199951172,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /v4dcyw"
+                },
+                "spliced": {
+                    "message": "==> Spack test ljnh4hlu4hge4bwudyrlkf3qabswa6yi\n==> Testing package perl-5.32.1-jbxkjfo\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.643585205078125,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /jbxkjf"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so-abi-laboratory-perl-v5.32.1-zlib-v1.2.12-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-Y0oe9.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-xWpzH.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so-abi-laboratory-perl-v5.32.1-zlib-v1.2.12-0.html\n",
+                    "return_code": 0,
+                    "seconds": 16.367157459259033,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so perl-v5.32.1-zlib-v1.2.12-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so-abi-laboratory-perl-v5.32.1-zlib-v1.2.12-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/B/B.so": 329872,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/File/DosGlob/DosGlob.so": 57424,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/Piece/Piece.so": 108528,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/Util.so": 101240,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Hostname/Hostname.so": 55808,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/mmap/mmap.so": 71304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Byte/Byte.so": 496824,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/HiRes/HiRes.so": 123944,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Unicode/Unicode.so": 92480,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Socket/Socket.so": 146248,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Syslog/Syslog.so": 83912,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Bzip2/Bzip2.so": 135832,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/POSIX/POSIX.so": 373472,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/FieldHash/FieldHash.so": 94488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/KR/KR.so": 2742568,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl": 62304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Devel/Peek/Peek.so": 99040,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/re/re.so": 1972616,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Normalize/Normalize.so": 759472,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/SHA/SHA.so": 168056,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so": 162104,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/via/via.so": 102360,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/threads.so": 174496,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Bzip2/Bzip2.so": 135832,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/scalar/scalar.so": 84616,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Collate/Collate.so": 1580824,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/encoding/encoding.so": 99688,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Devel/Peek/Peek.so": 99040,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Storable/Storable.so": 377080,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/via/via.so": 102360,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/IPC/SysV/SysV.so": 119200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Collate/Collate.so": 1580824,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so": 9897792,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/mro/mro.so": 100880,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Symbol/Symbol.so": 114584,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Syslog/Syslog.so": 83912,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/attributes/attributes.so": 67136,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/List/Util/Util.so": 242416,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/threads.so": 174496,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Opcode/Opcode.so": 104352,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/SDBM_File/SDBM_File.so": 127616,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/B/B.so": 329872,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/Piece/Piece.so": 108528,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Socket/Socket.so": 146248,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/IO/IO.so": 103280,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Encode.so": 175048,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Filter/Util/Call/Call.so": 76688,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/CN/CN.so": 2392360,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/I18N/Langinfo/Langinfo.so": 78128,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/EBCDIC/EBCDIC.so": 94672,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/re/re.so": 1972616,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Sys/Hostname/Hostname.so": 55808,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/IO/IO.so": 103280,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Filter/Util/Call/Call.so": 76688,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Zlib/Zlib.so": 263048,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Fcntl/Fcntl.so": 76416,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Opcode/Opcode.so": 104352,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/GDBM_File/GDBM_File.so": 105320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Cwd/Cwd.so": 89040,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/ODBM_File/ODBM_File.so": 96016,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/GDBM_File/GDBM_File.so": 105320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/attributes/attributes.so": 67136,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/mro/mro.so": 100880,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/bin/perl5.32.1": 62304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/File/DosGlob/DosGlob.so": 57424,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Cwd/Cwd.so": 89040,
+                "/usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0": 198664,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/NDBM_File/NDBM_File.so": 93304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Storable/Storable.so": 377080,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Unicode/Unicode.so": 92480,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/MIME/Base64/Base64.so": 78256,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/encoding/encoding.so": 99688,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Unicode/Normalize/Normalize.so": 759472,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Math/BigInt/FastCalc/FastCalc.so": 82152,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/File/Glob/Glob.so": 163736,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Fcntl/Fcntl.so": 76416,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/IPC/SysV/SysV.so": 119200,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Symbol/Symbol.so": 114584,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/FieldHash/FieldHash.so": 94488,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/SHA/SHA.so": 168056,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/mmap/mmap.so": 71304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/shared/shared.so": 176032,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/MIME/Base64/Base64.so": 78256,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/POSIX/POSIX.so": 373472,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib/libbz2.so.1.0.8": 224728,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/CORE/libperl.so": 9897792,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib/libgdbm_compat.so.4.0.0": 67280,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/NDBM_File/NDBM_File.so": 93304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Encode.so": 175048,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/MD5/MD5.so": 101792,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/List/Util/Util.so": 242416,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/TW/TW.so": 2322848,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Compress/Raw/Zlib/Zlib.so": 263048,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Math/BigInt/FastCalc/FastCalc.so": 82152,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib/libgdbm.so.6.0.0": 276600,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/JP/JP.so": 3039536,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/CN/CN.so": 2392360,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/threads/shared/shared.so": 176032,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Digest/MD5/MD5.so": 101792,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/PerlIO/scalar/scalar.so": 84616,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/JP/JP.so": 3039536,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/TW/TW.so": 2322848,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/ODBM_File/ODBM_File.so": 96016,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/bin/perl5.32.1": 62304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/SDBM_File/SDBM_File.so": 127616,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Time/HiRes/HiRes.so": 123944,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/File/Glob/Glob.so": 163736,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Hash/Util/Util.so": 101240,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Data/Dumper/Dumper.so": 162104,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/Byte/Byte.so": 496824,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/I18N/Langinfo/Langinfo.so": 78128,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/bin/perl": 62304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-jbxkjfogivzt3fopwunilgsfyq2vf6rf/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/EBCDIC/EBCDIC.so": 94672,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.32.1-v4dcyw67v4cxmwybfyaaoiu4waquy453/lib/5.32.1/x86_64-linux-thread-multi/auto/Encode/KR/KR.so": 2742568
+            }
+        },
+        "experiment": "perl",
+        "result": "splice-success",
+        "success": true,
+        "splice": "zlib@1.2.12",
+        "package": "perl@5.32.1",
+        "different_libs": false
+    }
+]
