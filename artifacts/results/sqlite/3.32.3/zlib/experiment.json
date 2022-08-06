@@ -1,0 +1,96 @@
+[
+    {
+        "specs": {
+            "original": "sqlite@3.32.3%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "sqlite@3.32.3%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/6zzxhp",
+            "spliced": "/ypecf6"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-6zzxhpoqjzxmutqicq4ua2lkpk5plmey/bin/sqlite3",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-6zzxhpoqjzxmutqicq4ua2lkpk5plmey/lib/libsqlite3.so.0.8.6"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/lib/libsqlite3.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/lib/libsqlite3.so.0",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/bin/sqlite3",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/lib/libsqlite3.so.0.8.6"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-6zzxhpoqjzxmutqicq4ua2lkpk5plmey/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-6zzxhpoqjzxmutqicq4ua2lkpk5plmey/bin/sqlite3",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.0002617835998535156
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-6zzxhpoqjzxmutqicq4ua2lkpk5plmey/lib/libsqlite3.so.0.8.6",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 0.00012993812561035156
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test yqoayzyemrjp5w35tynk6vvfwtesv7xj\n==> Testing package sqlite-3.32.3-6zzxhpo\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.5152957439422607,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /6zzxhp"
+                },
+                "spliced": {
+                    "message": "==> Spack test urjz7v464zpnzk62om6loywdx75fx3fj\n==> Testing package sqlite-3.32.3-ypecf6g\n============================= 1 passed of 1 specs ==============================\n",
+                    "return_code": 0,
+                    "seconds": 0.49222302436828613,
+                    "prediction": true,
+                    "command": "/spack/bin/spack test run /ypecf6"
+                }
+            }
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-6zzxhpoqjzxmutqicq4ua2lkpk5plmey/bin/sqlite3": 7070784,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/lib/libsqlite3.so.0": 5824328,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/bin/sqlite3": 7070784,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib/libz.so.1.2.12": 301544,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-6zzxhpoqjzxmutqicq4ua2lkpk5plmey/lib/libsqlite3.so.0.8.6": 5824328,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/lib/libsqlite3.so.0.8.6": 5824328,
+                "/lib/x86_64-linux-gnu/libm.so.6": 940560,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.32.3-ypecf6glj35c64hnqfybtnd2yrsvpmix/lib/libsqlite3.so": 5824328,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib/libreadline.so.8.1": 1029560
+            }
+        },
+        "experiment": "sqlite",
+        "result": "splice-success",
+        "success": true,
+        "splice": "zlib@1.2.12",
+        "package": "sqlite@3.32.3",
+        "different_libs": false
+    }
+]

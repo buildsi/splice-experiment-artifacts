@@ -1,0 +1,341 @@
+[
+    {
+        "specs": {
+            "original": "uftrace@master%gcc@11.2.0~doc~python2+python3 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^capstone@4.0.2%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^curl@7.83.0%gcc@11.2.0~gssapi~ldap~libidn2~librtmp~libssh~libssh2~nghttp2 libs=shared,static tls=openssl arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^elfutils@0.186%gcc@11.2.0~bzip2~debuginfod+nls~xz arch=linux-ubuntu22.04-x86_64_v4 ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-x86_64_v4 ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libunwind@1.6.2%gcc@11.2.0~block_signals~conservative_checks~cxx_exceptions~debug~debug_frame+docs~pic+tests+weak_backtrace~xz~zlib components=none libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^lua-luajit@2.0.5%gcc@11.2.0+lualinks fetcher=curl arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-x86_64_v4 ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-x86_64_v4 ^unzip@6.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4 ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-x86_64_v4",
+            "spliced": "uftrace@master%gcc@11.2.0~doc~python2+python3 arch=linux-ubuntu22.04-x86_64_v4 ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=linux-ubuntu22.04-x86_64_v4 ^bzip2@1.0.8%gcc@11.2.0~debug~pic+shared arch=linux-ubuntu22.04-x86_64_v4 ^ca-certificates-mozilla@2022-03-29%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^capstone@4.0.2%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=linux-ubuntu22.04-x86_64_v4 ^cmake@3.23.2%gcc@11.2.0~doc+ncurses+ownlibs~qt build_type=Release arch=linux-ubuntu22.04-x86_64_v4 ^curl@7.83.0%gcc@11.2.0~gssapi~ldap~libidn2~librtmp~libssh~libssh2~nghttp2 libs=shared,static tls=openssl arch=linux-ubuntu22.04-x86_64_v4 ^diffutils@3.8%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^elfutils@0.186%gcc@11.2.0~bzip2~debuginfod+nls~xz arch=linux-ubuntu22.04-x86_64_v4 ^expat@2.4.8%gcc@11.2.0+libbsd arch=linux-ubuntu22.04-x86_64_v4 ^gdbm@1.19%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^gettext@0.21%gcc@11.2.0+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-ubuntu22.04-x86_64_v4 ^libbsd@0.11.5%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libffi@3.4.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libmd@1.0.4%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libsigsegv@2.13%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^libunwind@1.6.2%gcc@11.2.0~block_signals~conservative_checks~cxx_exceptions~debug~debug_frame+docs~pic+tests+weak_backtrace~xz~zlib components=none libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^libxml2@2.9.13%gcc@11.2.0~python arch=linux-ubuntu22.04-x86_64_v4 ^lua-luajit@2.0.5%gcc@11.2.0+lualinks fetcher=curl arch=linux-ubuntu22.04-x86_64_v4 ^m4@1.4.19%gcc@11.2.0+sigsegv patches=9dc5fbd,bfdffa7 arch=linux-ubuntu22.04-x86_64_v4 ^ncurses@6.2%gcc@11.2.0~symlinks+termlib abi=none arch=linux-ubuntu22.04-x86_64_v4 ^openssl@1.1.1q%gcc@11.2.0~docs~shared certs=mozilla patches=3fdcf2d arch=linux-ubuntu22.04-x86_64_v4 ^perl@5.34.1%gcc@11.2.0+cpanm+shared+threads arch=linux-ubuntu22.04-x86_64_v4 ^pigz@2.7%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^pkgconf@1.8.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^python@3.9.13%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,f2fd060 arch=linux-ubuntu22.04-x86_64_v4 ^readline@8.1.2%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^sqlite@3.38.5%gcc@11.2.0+column_metadata+dynamic_extensions+fts~functions+rtree arch=linux-ubuntu22.04-x86_64_v4 ^tar@1.34%gcc@11.2.0 zip=pigz arch=linux-ubuntu22.04-x86_64_v4 ^unzip@6.0%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^util-linux-uuid@2.37.4%gcc@11.2.0 arch=linux-ubuntu22.04-x86_64_v4 ^xz@5.2.5%gcc@11.2.0~pic libs=shared,static arch=linux-ubuntu22.04-x86_64_v4 ^zlib@1.2.12%gcc@11.2.0+optimize+pic+shared patches=0d38234 arch=linux-ubuntu22.04-x86_64_v4 ^zstd@1.5.2%gcc@11.2.0+programs compression=none libs=shared,static arch=linux-ubuntu22.04-x86_64_v4"
+        },
+        "ids": {
+            "original": "/y3iwh4",
+            "spliced": "/en34of"
+        },
+        "original": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-single.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-nop.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast-single.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/bin/uftrace"
+        ],
+        "spliced": [
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-single.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/bin/uftrace",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-nop.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-fast.so",
+            "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-fast-single.so"
+        ],
+        "paths": {
+            "loads": {
+                "original": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/elfutils-0.186-2iekj2mxoqou7inf7ya2xre35jt3evo5/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/expat-2.4.8-s5vsv76isyubw5hyxj52f22oru4gnlkl/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/python-3.9.13-mgnzob74nbcueiich3dqlgbqwelqnu26/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/lua-luajit-2.0.5-mcmty627fyvygv5hhxrxtemc3lq6egfl/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libbsd-0.11.5-bzcigiybl7sofxasuc2meyh5vpczbsfq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libmd-1.0.4-a6uikiyvtup4aooi3hyjaaapqxbzitpu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/util-linux-uuid-2.37.4-bsto4aqxpae6ahekgqhgwv7d5imqzjir/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.13-aibkq4n2tg367zub2obvmcghgrm6hvm7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libffi-3.4.2-rwchh7tslhtpmiha6ciynhe6fij7u7zz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zstd-1.5.2-3v57d7icvaltd3myvdxqwpfhabte7jnm/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gettext-0.21-s34rccrsz36hgcyxpn6rzldnxrqsrymv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/curl-7.83.0-wzpg4sm56ey6qleagvnwhl4xfod37brt/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libunwind-1.6.2-cvgjkci6woufltlhzxc64q3rxwmlennb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.38.5-42fvgncjooinicry2o7fhni6ovtuofzd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib"
+                ],
+                "spliced": [
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gdbm-1.19-6oga5z7ci5jruupmirux4neifsyblyfz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libiconv-1.16-spihuvccgglc2kwv6l6ig75vo74qr742/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/expat-2.4.8-s5vsv76isyubw5hyxj52f22oru4gnlkl/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/openssl-1.1.1q-q5lvo4oel6bposdvpn5sh4cnxcyuv63j/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/python-3.9.13-mgnzob74nbcueiich3dqlgbqwelqnu26/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/berkeley-db-18.1.40-rghamddf2h2qmwxqzl66qzbjjtvkky5u/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/lua-luajit-2.0.5-a35xbr6fj5cr646znrb4dlqwjt4mg4sx/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libbsd-0.11.5-bzcigiybl7sofxasuc2meyh5vpczbsfq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/pkgconf-1.8.0-f7tw6htx3e7byzstxk6tf5nsthuax6qg/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/elfutils-0.186-lkrxbkolw3zx34rymxdglncmzqv3xc2k/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/bzip2-1.0.8-fh7xswtqghrdaobdrrrohk5nr2iomteu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zlib-1.2.12-luwgiwun44dt7hmxv4ki6xjnxyucze7f/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/curl-7.83.0-ahfkpusi4wtetpxp5bzkikdoehu3yal3/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libmd-1.0.4-a6uikiyvtup4aooi3hyjaaapqxbzitpu/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/util-linux-uuid-2.37.4-bsto4aqxpae6ahekgqhgwv7d5imqzjir/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libxml2-2.9.13-aibkq4n2tg367zub2obvmcghgrm6hvm7/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/readline-8.1.2-g3ekkwokhxgude2tvtgxnidmyn4ylloq/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libffi-3.4.2-rwchh7tslhtpmiha6ciynhe6fij7u7zz/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/xz-5.2.5-2emntpn7rbcpn2w6vouqgr2knpyvtkre/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/zstd-1.5.2-3v57d7icvaltd3myvdxqwpfhabte7jnm/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/gettext-0.21-s34rccrsz36hgcyxpn6rzldnxrqsrymv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libunwind-1.6.2-cvgjkci6woufltlhzxc64q3rxwmlennb/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/sqlite-3.38.5-42fvgncjooinicry2o7fhni6ovtuofzd/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/libsigsegv-2.13-n3bp3wwtgw7y2klh3f7aajspvv2neeb6/lib",
+                    "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/perl-5.34.1-lnvbwv4yorlcyq5oq73hlthgaaauofxv/lib"
+                ]
+            }
+        },
+        "predictions": {
+            "symbols": [
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-single.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: symbol elf_nextscn was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getshdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getsym was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrel was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getshdrstrndx was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getehdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errno was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errmsg was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrela was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getnote was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_version was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getphdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getdata was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_end was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_begin was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_strptr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getdyn was originally provided by libelf-0, after splice is provided by libelf\nsymbol dwarf_offdie was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_aggregate_size was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_end was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_line was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_siblingof was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formsdata was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lowpc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diecu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diename was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_linesrc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_tag was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_nextcu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lineno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getelf was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_begin was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_child was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrc_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errmsg was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_file was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getlocation was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_bytesize was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formref_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getfuncs was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formstring was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrcfiles was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_cuoffset was originally provided by libdw-0, after splice is provided by libdw",
+                    "prediction": false,
+                    "seconds": 0.0005104541778564453
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-single.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 5.745887756347656e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-single.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0006372928619384766
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-nop.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: ",
+                    "prediction": true,
+                    "seconds": 3.5762786865234375e-06
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast-single.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: symbol elf_nextscn was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getshdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getsym was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrel was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getshdrstrndx was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getehdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errno was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errmsg was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrela was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getnote was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_version was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getphdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getdata was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_end was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_begin was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_strptr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getdyn was originally provided by libelf-0, after splice is provided by libelf\nsymbol dwarf_offdie was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_aggregate_size was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_end was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_line was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_siblingof was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formsdata was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lowpc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diecu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diename was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_linesrc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_tag was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_nextcu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lineno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getelf was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_begin was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_child was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrc_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errmsg was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_file was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getlocation was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_bytesize was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formref_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getfuncs was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formstring was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrcfiles was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_cuoffset was originally provided by libdw-0, after splice is provided by libdw",
+                    "prediction": false,
+                    "seconds": 0.0004343986511230469
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast-single.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 4.9591064453125e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast-single.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0005848407745361328
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: symbol elf_nextscn was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getshdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getsym was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrel was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getshdrstrndx was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getehdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errno was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errmsg was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrela was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getnote was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_version was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getphdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getdata was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_end was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_begin was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_strptr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getdyn was originally provided by libelf-0, after splice is provided by libelf\nsymbol dwarf_offdie was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_aggregate_size was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_end was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_line was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_siblingof was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formsdata was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lowpc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diecu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diename was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_linesrc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_tag was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_nextcu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lineno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getelf was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_begin was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_child was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrc_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errmsg was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_file was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getlocation was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_bytesize was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formref_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getfuncs was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formstring was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrcfiles was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_cuoffset was originally provided by libdw-0, after splice is provided by libdw",
+                    "prediction": false,
+                    "seconds": 0.0004680156707763672
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 5.078315734863281e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0005838871002197266
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast.so",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: symbol elf_nextscn was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getshdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getsym was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrel was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getshdrstrndx was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getehdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errno was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errmsg was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrela was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getnote was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_version was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getphdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getdata was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_end was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_begin was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_strptr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getdyn was originally provided by libelf-0, after splice is provided by libelf\nsymbol dwarf_offdie was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_aggregate_size was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_end was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_line was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_siblingof was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formsdata was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lowpc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diecu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diename was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_linesrc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_tag was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_nextcu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lineno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getelf was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_begin was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_child was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrc_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errmsg was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_file was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getlocation was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_bytesize was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formref_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getfuncs was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formstring was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrcfiles was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_cuoffset was originally provided by libdw-0, after splice is provided by libdw",
+                    "prediction": false,
+                    "seconds": 0.00046539306640625
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 4.673004150390625e-05
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast.so",
+                    "splice_type": "same_lib",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "command": "missing-previously-found-symbols",
+                    "message": [],
+                    "prediction": true,
+                    "seconds": 0.0005681514739990234
+                },
+                {
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/bin/uftrace",
+                    "splice_type": "same_lib",
+                    "command": "binary-checks-symbol-provisioner-change",
+                    "message": "Symbol provider changes: symbol elf_nextscn was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getshdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getsym was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrel was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getshdrstrndx was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getehdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errno was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_errmsg was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getrela was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getnote was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_version was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getphdr was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_getdata was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_end was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_begin was originally provided by libelf-0, after splice is provided by libelf\nsymbol elf_strptr was originally provided by libelf-0, after splice is provided by libelf\nsymbol gelf_getdyn was originally provided by libelf-0, after splice is provided by libelf\nsymbol dwarf_offdie was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_aggregate_size was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_end was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_line was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_siblingof was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formsdata was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lowpc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diecu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_diename was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_linesrc was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_tag was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_nextcu was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_lineno was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getelf was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_begin was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_child was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrc_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_errmsg was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_decl_file was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getlocation was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_bytesize was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formref_die was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getfuncs was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_attr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_hasattr_integrate was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_formstring was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_getsrcfiles was originally provided by libdw-0, after splice is provided by libdw\nsymbol dwarf_cuoffset was originally provided by libdw-0, after splice is provided by libdw",
+                    "prediction": false,
+                    "seconds": 0.0006427764892578125
+                }
+            ],
+            "libabigail": [
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.3621485233306885,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-single.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-single.so",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.2572908401489258,
+                    "command": "/usr/local/bin/abidiff /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.3242614269256592,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast-single.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast-single.so",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.33026123046875,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount.so",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                },
+                {
+                    "message": "",
+                    "return_code": 0,
+                    "seconds": 0.32651329040527344,
+                    "command": "/usr/local/bin/abicompat /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast.so /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "binary": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast.so",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ],
+            "spack-test": {
+                "original": {
+                    "message": "==> Spack test 5srxfuyddfocw2dkn4hkm6fooah4pvbv\n==> Testing package uftrace-master-y3iwh4a\n==> Error: TestFailure: 1 tests failed.\n\n\nExpected 'main\\(2, ' to match output of `uftrace -A . -R . -P main /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/bin/uftrace -V`\n\nOutput: uftrace v0.12-75-g62fc6 ( x86_64 dwarf python luajit tui perf sched dynamic )\n# DURATION     TID     FUNCTION\n            [329988] | main() {\n 173.609 us [329988] |   getopt_long(2, 0x7fff862042a8, \"+aA:b:C:d:D:eE:f:F:hH:kK:lN:P:r:R:s:S:t:T:U:vVW:Z:\") = 86;\n   3.800 us [329988] |   __vfprintf_chk();\n 181.910 us [329988] | } /* main */\n\n\n/spack/lib/spack/spack/package_base.py:2103, in _run_test_helper:\n       2100        for check in expected:\n       2101            cmd = ' '.join([runner.name] + options)\n       2102            msg = \"Expected '{0}' to match output of `{1}`\".format(check, cmd)\n  >>   2103            msg += '\\n\\nOutput: {0}'.format(output)\n       2104            assert re.search(check, output), msg\n\n\n/spack/lib/spack/spack/build_environment.py:1076, in _setup_pkg_and_run:\n       1073        tb_string = traceback.format_exc()\n       1074\n       1075        # build up some context from the offending package so we can\n  >>   1076        # show that, too.\n       1077        package_context = get_package_context(tb)\n       1078\n       1079        logfile = None\n\nSee test log for details:\n  /cache/spack/test/5srxfuyddfocw2dkn4hkm6fooah4pvbv/uftrace-master-y3iwh4a-test-out.txt\n\n==> Error: 1 test(s) in the suite failed.\n\n======================== 1 failed, 0 passed of 1 specs =========================\n",
+                    "return_code": 1,
+                    "seconds": 3.158108711242676,
+                    "prediction": false,
+                    "command": "/spack/bin/spack test run /y3iwh4"
+                },
+                "spliced": {
+                    "message": "==> Spack test i4m6pixaw7edeyqgrojatwssohl66pmy\n==> Testing package uftrace-master-en34ofn\n==> Error: TestFailure: 1 tests failed.\n\n\nExpected 'main\\(2, ' to match output of `uftrace -A . -R . -P main /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/bin/uftrace -V`\n\nOutput: uftrace v0.12-75-g62fc6 ( x86_64 dwarf python luajit tui perf sched dynamic )\n# DURATION     TID     FUNCTION\n            [330003] | main() {\n 160.308 us [330003] |   getopt_long(2, 0x7fff75ed6eb8, \"+aA:b:C:d:D:eE:f:F:hH:kK:lN:P:r:R:s:S:t:T:U:vVW:Z:\") = 86;\n   3.500 us [330003] |   __vfprintf_chk();\n 168.108 us [330003] | } /* main */\n\n\n/spack/lib/spack/spack/package_base.py:2103, in _run_test_helper:\n       2100        for check in expected:\n       2101            cmd = ' '.join([runner.name] + options)\n       2102            msg = \"Expected '{0}' to match output of `{1}`\".format(check, cmd)\n  >>   2103            msg += '\\n\\nOutput: {0}'.format(output)\n       2104            assert re.search(check, output), msg\n\n\n/spack/lib/spack/spack/build_environment.py:1076, in _setup_pkg_and_run:\n       1073        tb_string = traceback.format_exc()\n       1074\n       1075        # build up some context from the offending package so we can\n  >>   1076        # show that, too.\n       1077        package_context = get_package_context(tb)\n       1078\n       1079        logfile = None\n\nSee test log for details:\n  /cache/spack/test/i4m6pixaw7edeyqgrojatwssohl66pmy/uftrace-master-en34ofn-test-out.txt\n\n==> Error: 1 test(s) in the suite failed.\n\n======================== 1 failed, 0 passed of 1 specs =========================\n",
+                    "return_code": 1,
+                    "seconds": 1.2738561630249023,
+                    "prediction": false,
+                    "command": "/spack/bin/spack test run /en34of"
+                }
+            },
+            "abi-laboratory": [
+                {
+                    "message": "old: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2\nnew: /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2\nreport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2-abi-laboratory-uftrace-vmaster-python-v3.9.13-0.html\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-1-ZKGv4.dump\nReading debug-info\nWARNING: incompatible build option detected: -O2 (required -Og for better analysis)\nCreating ABI dump\n\nThe object ABI has been dumped to:\n  /tmp/ABI-2-gyBmS.dump\nPreparing, please wait ...\nComparing ABIs ...\nComparing APIs ...\nCreating compatibility report ...\nBinary compatibility: 100%\nSource compatibility: 100%\nTotal binary compatibility problems: 0, warnings: 0\nTotal source compatibility problems: 0, warnings: 0\nReport: /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2-abi-laboratory-uftrace-vmaster-python-v3.9.13-0.html\n",
+                    "return_code": 0,
+                    "seconds": 21.343353986740112,
+                    "command": "/bin/bash /code/scripts/run_abi_laboratory.sh /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2 /spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2 uftrace-vmaster-python-v3.9.13-0 /cache/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2-abi-laboratory-uftrace-vmaster-python-v3.9.13-0.html",
+                    "spliced_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2",
+                    "original_lib": "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2",
+                    "prediction": true,
+                    "splice_type": "same_lib"
+                }
+            ]
+        },
+        "stats": {
+            "sizes_bytes": {
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-nop.so": 17320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib/libncursesw.so.6.2": 1244328,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast-single.so": 1149296,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-nop.so": 17320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-fast.so": 1150312,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/elfutils-0.186-lkrxbkolw3zx34rymxdglncmzqv3xc2k/lib/libdw.so.1": 3952904,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-wdqxwu76nqe3a6ktz6r4lkvdzipkrvi4/lib/libcapstone.so.4.0.2": 13806816,
+                "/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": 240936,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount-single.so": 1200504,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/ncurses-6.2-ncnrv2p753lgdghoapjrjpryk2ogkct3/lib/libtinfow.so.6.2": 838824,
+                "/lib/x86_64-linux-gnu/libc.so.6": 2216304,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/lib/libmcount.so": 1201464,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-fast.so": 1150312,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-y3iwh4a4cowablf46twypqkjjjtwqxtr/bin/uftrace": 2250936,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-single.so": 1200504,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/elfutils-0.186-2iekj2mxoqou7inf7ya2xre35jt3evo5/lib/libdw-0.186.so": 3952904,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/capstone-4.0.2-2vn24rdeujewycpwlm7qhuejyazkmw3n/lib/libcapstone.so.4.0.2": 13806816,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/elfutils-0.186-2iekj2mxoqou7inf7ya2xre35jt3evo5/lib/libelf-0.186.so": 965528,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/bin/uftrace": 2250936,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/elfutils-0.186-lkrxbkolw3zx34rymxdglncmzqv3xc2k/lib/libelf.so.1": 965528,
+                "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30": 2260320,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount.so": 1201464,
+                "/spack/opt/spack/linux-ubuntu22.04-x86_64_v4/gcc-11.2.0/uftrace-master-en34ofnxrjvugnockaztnduyirdvxbvv/lib/libmcount-fast-single.so": 1149296
+            }
+        },
+        "experiment": "uftrace",
+        "result": "splice-success",
+        "success": true,
+        "splice": "python@3.9.13",
+        "package": "uftrace@master",
+        "different_libs": false
+    }
+]
